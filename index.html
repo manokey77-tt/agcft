@@ -245,7 +245,7 @@
         <div class="bg-white rounded-2xl max-w-sm w-full">
             <div class="bg-navy py-4 px-6 flex justify-between text-white rounded-t-2xl"><h3 class="font-bold"><i class="fas fa-lock"></i> 관리자 인증</h3><button onclick="closePasswordModal()"><i class="fas fa-times"></i></button></div>
             <div class="p-6">
-                <input type="password" id="adminPasswordInput" class="w-full border rounded-lg px-4 py-3 mb-2" placeholder="비밀번호 8080uplus 입력" onkeypress="if(event.key==='Enter') checkAdminPassword()">
+                <input type="password" id="adminPasswordInput" class="w-full border rounded-lg px-4 py-3 mb-2" placeholder="비밀번호 입력" onkeypress="if(event.key==='Enter') checkAdminPassword()">
                 <p id="passwordErrorMsg" class="text-red-500 text-xs hidden mb-4">비밀번호 오류</p>
                 <button onclick="checkAdminPassword()" class="w-full bg-navy text-white font-bold py-3 rounded-xl mt-2">확인</button>
             </div>
@@ -487,3 +487,4 @@
     </script>
 </body>
 </html>
+
