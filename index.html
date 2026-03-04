@@ -364,10 +364,9 @@
         try {
             app = initializeApp(firebaseConfig);
             auth = getAuth(app);
-            db = getFirestore(app);
-
-            // 중요: 처음 페이지 로딩 시엔 '자동 로그인'을 시도하지 않습니다.
-            // 일반 사용자는 로그인 없이도 onSnapshot을 통해 '읽기'가 가능합니다. (Firestore 규칙에서 허용됨)
+            
+            // 🔥 중요 수정: 기본 데이터베이스 대신 생성하신 'hanbit0'을 명시적으로 연결합니다.
+            db = getFirestore(app, "hanbit0");
             
             const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'prices', 'current');
             
@@ -442,6 +441,8 @@
                 await signInWithEmailAndPassword(auth, email, pwd);
                 console.log("이메일 로그인 성공!");
                 
+                // 로그인 성공 알림 추가
+                alert("✅ 관리자 로그인 성공!\n이제 데이터베이스에 요금을 저장할 수 있습니다.");
                 window.closePasswordModal();
                 
                 // 모달 폼에 데이터 채우기
@@ -470,14 +471,14 @@
             } catch (error) {
                 console.error("로그인 에러:", error);
                 const errMsg = document.getElementById('passwordErrorMsg');
-                errMsg.innerText = "로그인 실패: 이메일이나 비밀번호가 잘못되었습니다.";
+                errMsg.innerText = "로그인 실패: 이메일이나 비밀번호가 잘못되었습니다. (" + error.message + ")";
                 errMsg.classList.remove('hidden'); 
             }
         };
 
         window.closeAdminModal = function() { document.getElementById('adminModal').classList.add('hidden'); };
         
-        // 데이터 영구 저장 로직
+        // 데이터 영구 저장 로직 (에러 추적 강화)
         window.saveAdminData = async function() {
             window.deviceData.s26u.discount_price = document.getElementById('admin-s26u-discount-price').value;
             window.deviceData.s26u.discount_plan = document.getElementById('admin-s26u-discount-plan').value;
@@ -509,10 +510,11 @@
                     await setDoc(docRef, window.deviceData);
                     const msg = document.getElementById('admin-save-msg');
                     msg.classList.remove('hidden');
-                    setTimeout(() => { msg.classList.add('hidden'); closeAdminModal(); }, 1500);
+                    alert("✅ 요금 데이터가 성공적으로 클라우드에 영구 저장되었습니다!");
+                    setTimeout(() => { msg.classList.add('hidden'); window.closeAdminModal(); }, 1500);
                 } catch(e) { 
-                    alert("❌ 데이터베이스 저장 실패!\nFirestore 규칙 또는 권한을 다시 확인해 주세요.");
-                    console.error(e); 
+                    alert("❌ 데이터베이스 저장 실패!\n원인: " + e.message + "\n\n(아래 3가지 필수 체크사항을 확인하세요)");
+                    console.error("Firebase Save Error:", e); 
                 }
             } else {
                 alert("❌ 저장 권한이 없습니다! 다시 로그인해 주세요.");
