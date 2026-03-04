@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGC화인테크노 임직원 전용 유플러스 특판</title>
+    <!-- 폰트: Noto Sans KR -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 아이콘: FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -46,6 +49,7 @@
 </head>
 <body class="bg-gray-bg text-gray-800 antialiased">
 
+    <!-- [섹션 1: 메인 타이틀] -->
     <header class="text-white pt-20 pb-16 px-4 text-center relative overflow-hidden bg-navy" style="background-image: url('mainbanner.jpg'); background-size: cover; background-position: center;">
         <div class="absolute inset-0 bg-navy bg-opacity-80"></div>
         <div class="max-w-4xl mx-auto relative z-10">
@@ -63,6 +67,7 @@
         </div>
     </header>
 
+    <!-- [섹션 2: 파트너 소개] -->
     <section class="bg-white py-12 px-4 shadow-sm relative z-20 -mt-6 mx-4 md:mx-auto max-w-5xl rounded-2xl border border-gray-100">
         <div class="text-center mb-8"><h2 class="text-2xl font-bold text-navy">믿을 수 있는 특판 파트너, <span class="text-magenta">한빛컴퍼니</span></h2></div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
@@ -72,6 +77,7 @@
         </div>
     </section>
 
+    <!-- [섹션 3: 단말기 혜택] -->
     <section class="py-16 px-4 max-w-5xl mx-auto">
         <div class="text-center mb-10">
             <h2 class="text-3xl font-black text-navy mb-3">AGC화인테크노 임직원이 가장 많이 선택하는 프리미엄</h2>
@@ -88,6 +94,7 @@
                     <button onclick="switchTab('s26u', 'discount')" id="btn-s26u-discount" class="tab-btn flex-1 py-3 text-center rounded-lg bg-white shadow font-bold text-magenta">선택약정 (요금할인)</button>
                     <button onclick="switchTab('s26u', 'subsidy')" id="btn-s26u-subsidy" class="tab-btn flex-1 py-3 text-center rounded-lg text-gray-500 font-medium">공시지원 (단말할인)</button>
                 </div>
+                <!-- 선택약정 뷰 -->
                 <div id="view-s26u-discount" class="space-y-4 animate-fade-in">
                     <div class="flex justify-between items-center py-2 border-b border-gray-100"><span class="text-gray-500">출고가</span><span class="font-bold" id="val-s26u-discount-price">1,698,400원</span></div>
                     <div class="flex justify-between items-center py-2 border-b border-gray-100"><span class="text-gray-500">추천 요금제</span><span class="font-bold"><span id="val-s26u-discount-plan">85,000원</span> <span class="text-magenta text-sm">(-21,250원 할인)</span></span></div>
@@ -97,6 +104,7 @@
                         <p class="text-4xl font-black text-magenta"><span id="val-s26u-discount-total">138,980</span><span class="text-2xl font-bold text-white">원</span></p>
                     </div>
                 </div>
+                <!-- 공시지원 뷰 -->
                 <div id="view-s26u-subsidy" class="space-y-4 hidden animate-fade-in">
                     <div class="flex justify-between items-center py-2 border-b border-gray-100"><span class="text-gray-500">출고가 <span class="text-magenta text-sm">(공시지원)</span></span><span class="font-bold" id="val-s26u-subsidy-price">1,198,400원</span></div>
                     <div class="flex justify-between items-center py-2 border-b border-gray-100"><span class="text-gray-500">추천 요금제</span><span class="font-bold" id="val-s26u-subsidy-plan">85,000원</span></div>
@@ -111,6 +119,7 @@
         </div>
     </section>
 
+    <!-- [섹션 4: 추천 라인업] -->
     <section class="py-12 px-4 max-w-5xl mx-auto border-t border-gray-200">
         <div class="text-center mb-10"><h2 class="text-2xl font-bold text-navy">취향대로 고르는 <span class="text-magenta">맞춤형 특별 지원 스마트폰</span></h2></div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -146,6 +155,7 @@
         </div>
     </section>
 
+    <!-- [섹션 7: 영수증 UI] -->
     <section class="py-16 px-4 bg-gray-100">
         <div class="max-w-4xl mx-auto bg-magenta text-white text-center py-6 rounded-2xl shadow-xl transform -translate-y-6 relative z-10 border-4 border-white">
             <h2 class="text-3xl md:text-5xl font-black tracking-tight">쓰던 폰 그대로 <span class="text-yellow-300">110만원 받기!</span></h2>
@@ -179,6 +189,7 @@
         </div>
     </section>
 
+    <!-- [푸터] -->
     <footer class="bg-gray-900 text-gray-400 py-12 px-4 pb-24 md:pb-12">
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
             <div class="mb-6 md:mb-0">
@@ -201,6 +212,7 @@
         <button onclick="openModal()" class="bg-magenta text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center text-2xl hover:bg-magenta-hover hover:scale-110 transition-all duration-300"><i class="fas fa-headset"></i></button>
     </div>
 
+    <!-- [상담 신청 모달] -->
     <div id="consultModal" class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden flex items-center justify-center p-4">
         <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden transform transition-all relative">
             <div class="bg-navy py-4 px-6 flex justify-between items-center text-white">
@@ -241,22 +253,27 @@
         </div>
     </div>
 
+    <!-- [관리자 이메일 인증 모달 (보안 강화)] -->
     <div id="passwordModal" class="fixed inset-0 bg-black bg-opacity-80 z-[70] hidden flex items-center justify-center p-4">
         <div class="bg-white rounded-2xl max-w-sm w-full">
-            <div class="bg-navy py-4 px-6 flex justify-between text-white rounded-t-2xl"><h3 class="font-bold"><i class="fas fa-lock"></i> 관리자 인증</h3><button onclick="closePasswordModal()"><i class="fas fa-times"></i></button></div>
+            <div class="bg-navy py-4 px-6 flex justify-between text-white rounded-t-2xl"><h3 class="font-bold"><i class="fas fa-lock"></i> 관리자 로그인</h3><button onclick="closePasswordModal()"><i class="fas fa-times"></i></button></div>
             <div class="p-6">
-                <input type="password" id="adminPasswordInput" class="w-full border rounded-lg px-4 py-3 mb-2" placeholder="비밀번호 입력" onkeypress="if(event.key==='Enter') checkAdminPassword()">
-                <p id="passwordErrorMsg" class="text-red-500 text-xs hidden mb-4">비밀번호 오류</p>
-                <button onclick="checkAdminPassword()" class="w-full bg-navy text-white font-bold py-3 rounded-xl mt-2">확인</button>
+                <p class="text-sm text-gray-600 mb-4">Firebase에 등록된 계정으로 로그인하세요.</p>
+                <input type="email" id="adminEmailInput" class="w-full border rounded-lg px-4 py-3 mb-3" placeholder="이메일 (예: admin@hbit.com)">
+                <input type="password" id="adminPasswordInput" class="w-full border rounded-lg px-4 py-3 mb-2" placeholder="비밀번호" onkeypress="if(event.key==='Enter') checkAdminPassword()">
+                <p id="passwordErrorMsg" class="text-red-500 text-xs hidden mb-4">로그인 실패: 이메일이나 비밀번호를 확인하세요.</p>
+                <button onclick="checkAdminPassword()" class="w-full bg-navy text-white font-bold py-3 rounded-xl mt-2">안전하게 로그인</button>
             </div>
         </div>
     </div>
 
+    <!-- [관리자 전용: 요금 관리 세부 모달] -->
     <div id="adminModal" class="fixed inset-0 bg-black bg-opacity-80 z-[60] hidden flex items-center justify-center p-4">
         <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden flex flex-col max-h-[90vh]">
             <div class="bg-gray-800 py-4 px-6 flex justify-between text-white shrink-0"><h3 class="font-bold"><i class="fas fa-cog"></i> 단말기 요금 관리 시스템</h3><button onclick="closeAdminModal()"><i class="fas fa-times"></i></button></div>
             <div class="bg-blue-50 px-6 py-3 border-b flex justify-between shrink-0"><p class="text-xs text-blue-800"><i class="fas fa-info-circle"></i> 변경된 값은 즉시 반영됩니다.</p><div id="admin-save-msg" class="hidden bg-green-500 text-white text-xs px-3 py-1 rounded font-bold">저장되었습니다!</div></div>
             <div class="p-6 overflow-y-auto flex-grow bg-gray-50 space-y-6">
+                <!-- S26 Ultra -->
                 <div class="bg-white p-4 border rounded-xl shadow-sm">
                     <h4 class="font-bold text-magenta mb-3 border-b pb-2">1. 갤럭시 S26 울트라</h4>
                     <div class="grid grid-cols-2 gap-4 text-sm">
@@ -271,6 +288,7 @@
                         <div><label class="text-magenta font-bold text-xs">공시지원 월총액(숫자)</label><input type="text" id="admin-s26u-subsidy-total" class="w-full border-2 border-magenta rounded p-2 bg-pink-50"></div>
                     </div>
                 </div>
+                <!-- S26+ -->
                 <div class="bg-white p-4 border rounded-xl shadow-sm">
                     <h4 class="font-bold text-navy mb-3 border-b pb-2">2. 갤럭시 S26+</h4>
                     <div class="grid grid-cols-3 gap-4 text-sm">
@@ -279,6 +297,7 @@
                         <div><label class="text-navy font-bold text-xs">월총액</label><input type="text" id="admin-s26p-total" class="w-full border-2 border-navy rounded p-2 bg-blue-50"></div>
                     </div>
                 </div>
+                <!-- S26 -->
                 <div class="bg-white p-4 border rounded-xl shadow-sm">
                     <h4 class="font-bold text-navy mb-3 border-b pb-2">3. 갤럭시 S26</h4>
                     <div class="grid grid-cols-3 gap-4 text-sm">
@@ -287,6 +306,7 @@
                         <div><label class="text-navy font-bold text-xs">월총액</label><input type="text" id="admin-s26-total" class="w-full border-2 border-navy rounded p-2 bg-blue-50"></div>
                     </div>
                 </div>
+                <!-- IP17 -->
                 <div class="bg-white p-4 border rounded-xl shadow-sm">
                     <h4 class="font-bold text-navy mb-3 border-b pb-2">4. 아이폰17 프로</h4>
                     <div class="grid grid-cols-3 gap-4 text-sm">
@@ -295,6 +315,7 @@
                         <div><label class="text-navy font-bold text-xs">월총액</label><input type="text" id="admin-ip17-total" class="w-full border-2 border-navy rounded p-2 bg-blue-50"></div>
                     </div>
                 </div>
+                <!-- Kids -->
                 <div class="bg-white p-4 border rounded-xl shadow-sm">
                     <h4 class="font-bold text-navy mb-3 border-b pb-2">5. 무너키즈폰</h4>
                     <div class="grid grid-cols-3 gap-4 text-sm">
@@ -311,12 +332,13 @@
         </div>
     </div>
 
+    <!-- [JavaScript - Firebase 연동 (이메일 로그인 보안 강화)] -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-        import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        // signInAnonymously 대신 signInWithEmailAndPassword 사용!
+        import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, doc, setDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        // Firebase 설정
         const firebaseConfig = {
             apiKey: "AIzaSyCAVxy-7gKtBEx53oROfg4vZLE9Ubmp3G4",
             authDomain: "agc-uplus.firebaseapp.com",
@@ -343,24 +365,22 @@
             auth = getAuth(app);
             db = getFirestore(app);
 
-            // API 키 차단 에러 발생 시 콘솔 경고만 띄우고 시스템이 멈추지 않도록 예외 처리 추가
-            signInAnonymously(auth).catch(error => {
-                console.warn("보안 설정에 의해 현재 환경에서 Firebase 접속이 차단되었습니다. 로컬 모드로 실행됩니다.");
+            // 중요: 처음 페이지 로딩 시엔 '자동 로그인'을 시도하지 않습니다.
+            // 일반 사용자는 로그인 없이도 onSnapshot을 통해 '읽기'가 가능합니다. (Firestore 규칙에서 허용됨)
+            
+            const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'prices', 'current');
+            
+            // 로그인 상태와 무관하게 실시간 가격 연동 실행 (읽기 전용)
+            onSnapshot(docRef, (snap) => {
+                if(snap.exists()){
+                    window.deviceData = snap.data();
+                    window.renderDevices();
+                }
+            }, (error) => {
+                console.warn("Firestore 실시간 연동 (읽기):", error.message);
             });
 
-            onAuthStateChanged(auth, (user) => {
-                if (!user) return;
-                const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'prices', 'current');
-                onSnapshot(docRef, (snap) => {
-                    if(snap.exists()){
-                        window.deviceData = snap.data();
-                        window.renderDevices();
-                    }
-                }, (error) => {
-                    console.warn("Firestore 읽기 권한 없음 또는 도메인 차단:", error.message);
-                });
-            });
-        } catch(e) { console.error(e); }
+        } catch(e) { console.error("Firebase 초기화 에러:", e); }
 
         window.renderDevices = function() {
             try {
@@ -387,7 +407,6 @@
             } catch(e){}
         };
         
-        // 폼 복사 및 카톡 이동 로직
         window.submitForm = function(e) {
             e.preventDefault();
             const time = document.getElementById('timeSelect').value;
@@ -397,17 +416,34 @@
             window.location.href = "http://pf.kakao.com/_rExbYG/chat";
         };
 
-        // 관리자 모달 제어 로직
+        // 이메일 로그인 모달 제어
         window.openPasswordModal = function() { 
             document.getElementById('passwordModal').classList.remove('hidden'); 
             document.getElementById('passwordErrorMsg').classList.add('hidden');
+            setTimeout(() => document.getElementById('adminEmailInput').focus(), 100);
         };
         window.closePasswordModal = function() { document.getElementById('passwordModal').classList.add('hidden'); };
-        window.checkAdminPassword = function() {
-            if(document.getElementById('adminPasswordInput').value === '8080uplus'){
+        
+        // 🚀 자바스크립트가 아닌 Firebase 실제 이메일 인증으로 변경
+        window.checkAdminPassword = async function() {
+            const email = document.getElementById('adminEmailInput').value;
+            const pwd = document.getElementById('adminPasswordInput').value;
+            
+            if(!email || !pwd) {
+                const errMsg = document.getElementById('passwordErrorMsg');
+                errMsg.innerText = "이메일과 비밀번호를 모두 입력해주세요.";
+                errMsg.classList.remove('hidden');
+                return;
+            }
+
+            try {
+                // Firebase 이메일 로그인 시도
+                await signInWithEmailAndPassword(auth, email, pwd);
+                console.log("이메일 로그인 성공!");
+                
                 window.closePasswordModal();
                 
-                // 폼에 기존 데이터 채우기
+                // 모달 폼에 데이터 채우기
                 document.getElementById('admin-s26u-discount-price').value = window.deviceData.s26u.discount_price;
                 document.getElementById('admin-s26u-discount-plan').value = window.deviceData.s26u.discount_plan;
                 document.getElementById('admin-s26u-discount-installment').value = window.deviceData.s26u.discount_installment;
@@ -428,12 +464,16 @@
                 document.getElementById('admin-kids-price').value = window.deviceData.kids.price;
                 document.getElementById('admin-kids-plan').value = window.deviceData.kids.plan;
                 document.getElementById('admin-kids-total').value = window.deviceData.kids.total;
-
+                
                 document.getElementById('adminModal').classList.remove('hidden'); 
-            } else { 
-                document.getElementById('passwordErrorMsg').classList.remove('hidden'); 
+            } catch (error) {
+                console.error("로그인 에러:", error);
+                const errMsg = document.getElementById('passwordErrorMsg');
+                errMsg.innerText = "로그인 실패: 이메일이나 비밀번호가 잘못되었습니다.";
+                errMsg.classList.remove('hidden'); 
             }
         };
+
         window.closeAdminModal = function() { document.getElementById('adminModal').classList.add('hidden'); };
         
         // 데이터 영구 저장 로직
@@ -461,6 +501,7 @@
             
             window.renderDevices();
 
+            // Firebase 로그인(auth.currentUser) 상태에서만 저장 시도
             if (auth && auth.currentUser) {
                 const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'prices', 'current');
                 try {
@@ -468,11 +509,15 @@
                     const msg = document.getElementById('admin-save-msg');
                     msg.classList.remove('hidden');
                     setTimeout(() => { msg.classList.add('hidden'); closeAdminModal(); }, 1500);
-                } catch(e) { alert("저장 실패: 도메인 제한 오류이거나 로컬 테스트 중입니다."); console.error(e); }
+                } catch(e) { 
+                    alert("❌ 데이터베이스 저장 실패!\nFirestore 규칙 또는 권한을 다시 확인해 주세요.");
+                    console.error(e); 
+                }
+            } else {
+                alert("❌ 저장 권한이 없습니다! 다시 로그인해 주세요.");
             }
         };
 
-        // UI 기본 모달 제어
         window.openModal = function(m) { 
             document.getElementById('consultModal').classList.remove('hidden'); 
             if(m) document.getElementById('modelSelect').value = m;
@@ -487,4 +532,3 @@
     </script>
 </body>
 </html>
-
