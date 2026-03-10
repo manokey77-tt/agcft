@@ -46,19 +46,19 @@
         }
     </style>
 </head>
-<body class="bg-gray-bg text-gray-800 antialiased">
+<body class="bg-gray-bg text-gray-800 antialiased overflow-x-hidden">
 
     <!-- [섹션 1: 메인 타이틀] -->
-    <header class="text-white pt-20 pb-16 px-4 text-center relative overflow-hidden bg-navy" style="background-image: url('mainbanner.jpg'); background-size: cover; background-position: center;">
+    <header class="text-white pt-12 pb-10 md:pt-20 md:pb-16 px-4 text-center relative overflow-hidden bg-navy" style="background-image: url('mainbanner.jpg'); background-size: cover; background-position: center;">
         <div class="absolute inset-0 bg-navy bg-opacity-80"></div>
-        <div class="max-w-4xl mx-auto relative z-10">
-            <span class="inline-block py-1 px-3 rounded-full bg-magenta text-sm font-bold mb-4 animate-pulse">AGC화인테크노 임직원 단독 혜택</span>
-            <h1 class="text-4xl md:text-5xl font-black mb-6 leading-tight">
+        <div class="max-w-4xl mx-auto relative z-10 w-full">
+            <span class="inline-block py-1 px-2.5 md:px-3 rounded-full bg-magenta text-[10px] md:text-sm font-bold mb-3 md:mb-4 animate-pulse whitespace-nowrap tracking-tighter">AGC화인테크노 임직원 단독 혜택</span>
+            <h1 class="text-[17px] sm:text-2xl md:text-5xl font-black mb-3 md:mb-6 leading-tight whitespace-nowrap tracking-tighter">
                 AGC화인테크노 임직원 한정!<br>
-                <span class="text-magenta">LG유플러스 통신비 파격 절감</span> 페스티벌
+                <span class="text-magenta">LG유플러스 통신비 파격 절감 페스티벌</span>
             </h1>
-            <p class="text-lg md:text-xl text-gray-300 mb-8">구미산업단지 우수 기업을 위한 유플러스 체인지 페스티벌, 지금 바로 특별한 혜택을 확인하세요.</p>
-            <button onclick="openModal()" class="bg-magenta hover:bg-magenta-hover text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition-colors">단독 시크릿 혜택 신청하기</button>
+            <p class="text-[11px] sm:text-sm md:text-xl text-gray-300 mb-6 md:mb-8 whitespace-nowrap tracking-tighter">구미산업단지 우수 기업을 위한 특별 혜택을 확인하세요.</p>
+            <button onclick="openModal()" class="bg-magenta hover:bg-magenta-hover text-white font-bold py-2.5 px-6 md:py-3 md:px-8 rounded-full text-sm md:text-lg shadow-lg transition-colors whitespace-nowrap">단독 시크릿 혜택 신청하기</button>
         </div>
         <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
             <div class="absolute w-96 h-96 bg-magenta rounded-full blur-3xl -top-20 -left-20"></div>
@@ -67,217 +67,289 @@
     </header>
 
     <!-- [섹션 2: 파트너 소개] -->
-    <section class="bg-white py-12 px-4 shadow-sm relative z-20 -mt-6 mx-4 md:mx-auto max-w-5xl rounded-2xl border border-gray-100">
-        <div class="text-center mb-8"><h2 class="text-2xl font-bold text-navy">믿을 수 있는 특판 파트너, <span class="text-magenta">한빛컴퍼니</span></h2></div>
+    <section class="bg-white py-6 md:py-12 px-4 shadow-sm relative z-20 -mt-6 mx-4 md:mx-auto max-w-5xl rounded-2xl border border-gray-100">
+        <div class="text-center mb-5 md:mb-8"><h2 class="text-[15px] sm:text-lg md:text-2xl font-bold text-navy whitespace-nowrap tracking-tighter">믿을 수 있는 특판 파트너, <span class="text-magenta">한빛컴퍼니</span></h2></div>
         
         <!-- 모바일 가로 스크롤(Carousel) 적용 -->
-        <div class="flex overflow-x-auto md:grid md:grid-cols-3 gap-4 md:gap-6 text-center pb-4 snap-x snap-mandatory scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-            <div class="p-6 md:p-4 flex-shrink-0 w-[85%] md:w-auto snap-center bg-gray-50 md:bg-transparent rounded-2xl md:rounded-none border border-gray-100 md:border-none">
-                <div class="w-16 h-16 bg-blue-50 text-navy rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fas fa-award"></i></div>
-                <h3 class="font-bold text-lg mb-2">10년의 노하우</h3>
-                <p class="text-gray-600 text-sm">오랜 기간 검증된 안정성과 탄탄한 고객 관리 서비스</p>
+        <div class="flex overflow-x-auto md:grid md:grid-cols-3 gap-3 md:gap-6 text-center pb-2 md:pb-4 snap-x snap-mandatory scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+            <div class="p-4 flex-shrink-0 w-[75%] md:w-auto snap-center bg-gray-50 md:bg-transparent rounded-2xl md:rounded-none border border-gray-100 md:border-none">
+                <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-50 text-navy rounded-full flex items-center justify-center mx-auto mb-3 text-xl md:text-2xl"><i class="fas fa-award"></i></div>
+                <h3 class="font-bold text-sm md:text-lg mb-1 whitespace-nowrap tracking-tighter">10년의 노하우</h3>
+                <p class="text-gray-600 text-[10px] md:text-sm tracking-tighter">오랜 기간 검증된 안정성과 탄탄한 고객 관리 서비스</p>
             </div>
-            <div class="p-6 md:p-4 flex-shrink-0 w-[85%] md:w-auto snap-center bg-gray-50 md:bg-transparent rounded-2xl md:rounded-none border border-gray-100 md:border-none">
-                <div class="w-16 h-16 bg-magenta text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fas fa-store"></i></div>
-                <h3 class="font-bold text-lg mb-2">대구/경북 11개 직영점</h3>
-                <p class="text-gray-600 text-sm">언제 어디서든 빠르고 편리한 오프라인 CS 지원</p>
+            <div class="p-4 flex-shrink-0 w-[75%] md:w-auto snap-center bg-gray-50 md:bg-transparent rounded-2xl md:rounded-none border border-gray-100 md:border-none">
+                <div class="w-12 h-12 md:w-16 md:h-16 bg-magenta text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl md:text-2xl"><i class="fas fa-store"></i></div>
+                <h3 class="font-bold text-sm md:text-lg mb-1 whitespace-nowrap tracking-tighter">대구/경북 11개 직영점</h3>
+                <p class="text-gray-600 text-[10px] md:text-sm tracking-tighter">언제 어디서든 빠르고 편리한 오프라인 CS 지원</p>
             </div>
-            <div class="p-6 md:p-4 flex-shrink-0 w-[85%] md:w-auto snap-center bg-gray-50 md:bg-transparent rounded-2xl md:rounded-none border border-gray-100 md:border-none">
-                <div class="w-16 h-16 bg-blue-50 text-navy rounded-full flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fas fa-handshake"></i></div>
-                <h3 class="font-bold text-lg mb-2">LGU+ 공식 대리점</h3>
-                <p class="text-gray-600 text-sm">AGC화인테크노 임직원 여러분의 통신 컨설팅 전담</p>
+            <div class="p-4 flex-shrink-0 w-[75%] md:w-auto snap-center bg-gray-50 md:bg-transparent rounded-2xl md:rounded-none border border-gray-100 md:border-none">
+                <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-50 text-navy rounded-full flex items-center justify-center mx-auto mb-3 text-xl md:text-2xl"><i class="fas fa-handshake"></i></div>
+                <h3 class="font-bold text-sm md:text-lg mb-1 whitespace-nowrap tracking-tighter">LGU+ 공식 대리점</h3>
+                <p class="text-gray-600 text-[10px] md:text-sm tracking-tighter">AGC화인테크노 임직원 전담 컨설팅 지원</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- [섹션: 유심 이동 특판 (110만원 받기)] -->
+    <section class="py-8 md:py-16 px-4 max-w-5xl mx-auto">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-magenta text-white text-center py-4 md:py-6 rounded-t-3xl shadow-lg relative z-10 border-b-4 border-yellow-300">
+                <h2 class="text-lg sm:text-2xl md:text-5xl font-black tracking-tighter whitespace-nowrap">쓰던 폰 그대로 <span class="text-yellow-300">110만원 받기!</span></h2>
+            </div>
+            <div class="bg-white rounded-b-3xl shadow-xl p-5 md:p-10 text-center relative overflow-hidden border border-gray-200 border-t-0">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-100 rounded-full mix-blend-multiply filter blur-2xl opacity-50 -translate-y-1/2 translate-x-1/2"></div>
+                <div class="absolute bottom-0 left-0 w-32 h-32 bg-pink-100 rounded-full mix-blend-multiply filter blur-2xl opacity-50 translate-y-1/2 -translate-x-1/2"></div>
+                
+                <h3 class="text-sm sm:text-xl md:text-3xl text-navy font-black mb-5 md:mb-8 leading-tight relative z-10 whitespace-nowrap tracking-tighter">휴대폰 구매없이 현금 지원과<span class="text-magenta"> 요금 할인까지!</span></h3>
+                
+                <div class="flex flex-col md:flex-row gap-3 md:gap-4 justify-center items-stretch mb-5 md:mb-8 relative z-10">
+                    <div class="flex-1 bg-blue-50 border border-blue-100 rounded-2xl p-4 md:p-6 flex flex-col justify-center items-center transform transition hover:-translate-y-1">
+                        <div class="w-10 h-10 md:w-14 md:h-14 bg-white shadow-sm text-blue-600 rounded-full flex items-center justify-center text-lg md:text-2xl mb-3"><i class="fas fa-sim-card"></i></div>
+                        <p class="text-gray-600 font-bold text-xs md:text-base mb-1 whitespace-nowrap tracking-tighter">쓰던 폰 그대로 유심만 이동, 인터넷+TV 가입시</p>
+                        <p class="text-magenta font-black text-xl md:text-3xl mt-1 whitespace-nowrap">110만원 제공</p>
+                    </div>
+                    <div class="flex-1 bg-pink-50 border border-pink-100 rounded-2xl p-4 md:p-6 flex flex-col justify-center items-center transform transition hover:-translate-y-1">
+                        <div class="w-10 h-10 md:w-14 md:h-14 bg-white shadow-sm text-magenta rounded-full flex items-center justify-center text-lg md:text-2xl mb-3"><i class="fas fa-users"></i></div>
+                        <p class="text-gray-600 font-bold text-xs md:text-base mb-1 whitespace-nowrap tracking-tighter">가족 추가 유심 이동시</p>
+                        <p class="text-gray-800 font-bold text-xs md:text-lg whitespace-nowrap tracking-tighter">현금 <span class="text-magenta font-black text-lg md:text-2xl">각 15만원</span> + <span class="text-blue-600 font-black">요금할인</span></p>
+                    </div>
+                </div>
+
+                <button onclick="openModal('단말기 없이 요금할인/결합')" class="bg-navy hover:bg-gray-800 text-white font-bold py-3 md:py-4 px-6 md:px-10 rounded-full text-sm md:text-xl shadow-xl transform transition hover:scale-105 w-full max-w-sm relative z-10 whitespace-nowrap tracking-tighter">특별 현금 지원 상담하기</button>
             </div>
         </div>
     </section>
 
     <!-- [섹션 3: 메인 단말기 혜택 (S26 Ultra)] -->
-    <section class="py-16 px-4 max-w-5xl mx-auto">
-        <div class="text-center mb-10">
-            <h2 class="text-3xl font-black text-navy mb-3">AGC화인테크노 임직원이 가장 많이 선택하는 프리미엄</h2>
-            <p class="text-2xl font-bold text-magenta">갤럭시 S26 울트라</p>
+    <section class="py-8 md:py-16 px-2 md:px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-6 md:mb-10">
+            <h2 class="text-sm sm:text-lg md:text-3xl font-black text-navy mb-1 md:mb-3 whitespace-nowrap tracking-tighter">AGC화인테크노 임직원이 가장 많이 선택하는 프리미엄</h2>
+            <p class="text-lg sm:text-xl md:text-2xl font-bold text-magenta whitespace-nowrap tracking-tighter">갤럭시 S26 울트라</p>
         </div>
-        <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row border border-gray-200">
-            <div class="md:w-1/2 p-8 flex items-center justify-center bg-gray-50">
-                <div class="relative w-full max-w-xs aspect-[9/16] bg-white rounded-3xl border-8 border-gray-800 flex items-center justify-center overflow-hidden shadow-2xl">
+        <!-- 50:50 나란히 배치 (모바일 포함) -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-row border border-gray-200">
+            <!-- 좌측 이미지 (50%) -->
+            <div class="w-1/2 p-3 md:p-8 flex items-center justify-center bg-gray-50 border-r border-gray-100">
+                <!-- 이미지 크기 대폭 축소 (w-24 = 96px) -->
+                <div class="relative w-24 sm:w-32 md:w-48 aspect-[9/16] bg-white rounded-xl md:rounded-3xl border-4 md:border-8 border-gray-800 flex items-center justify-center overflow-hidden shadow-lg">
                     <img src="s26ultra.jpg" alt="갤럭시 S26 울트라" class="w-full h-full object-cover">
                 </div>
             </div>
-            <div class="md:w-1/2 p-8 md:p-10 flex flex-col justify-center">
-                <div class="space-y-4">
-                    <!-- 상세 리스트 -->
-                    <div class="border-t border-b border-gray-100 py-4 space-y-3">
-                        <div class="flex justify-between items-center"><span class="text-gray-500">출고가</span><span class="font-bold text-gray-400 line-through" id="val-s26u-price">1,698,400원</span></div>
-                        <div class="flex justify-between items-center"><span class="text-magenta font-bold">추가지원금</span><span class="font-bold text-magenta" id="val-s26u-support">500,000원</span></div>
-                        <div class="flex justify-between items-center"><span class="text-gray-800 font-bold">기기값</span><span class="font-bold text-gray-800" id="val-s26u-device">1,198,400원</span></div>
-                        <div class="flex justify-between items-center"><span class="text-gray-500">요금제</span><span class="font-bold" id="val-s26u-plan">85,000원</span></div>
+            <!-- 우측 정보 (50%) -->
+            <div class="w-1/2 p-3 md:p-10 flex flex-col justify-center">
+                <div class="space-y-2 md:space-y-4">
+                    <div class="border-t border-b border-gray-100 py-2 md:py-4 space-y-1.5 md:space-y-3">
+                        <div class="flex justify-between items-center text-[10px] md:text-base"><span class="text-gray-500">출고가</span><span class="font-bold text-gray-400 line-through" id="val-s26u-price">1,698,400원</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-base"><span class="text-blue-500 font-bold">선택약정</span><span class="font-bold text-blue-500" id="val-s26u-discount">선택약정 25% 할인</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-base"><span class="text-magenta font-bold tracking-tighter">추가지원금</span><span class="font-bold text-magenta" id="val-s26u-support">500,000원</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-base"><span class="text-gray-800 font-bold">기기값</span><span class="font-bold text-gray-800" id="val-s26u-device">1,198,400원</span></div>
+                        <div class="flex justify-between items-end pt-1"><span class="text-gray-500 text-[10px] md:text-base">월요금</span>
+                            <div class="text-right leading-tight">
+                                <span class="text-[9px] md:text-sm tracking-tighter"><span class="text-gray-400 line-through" id="val-s26u-plan">85,000원</span><br class="md:hidden"><span class="text-blue-500 font-bold ml-1">선택약정 25% 할인</span></span><br>
+                                <span class="font-bold text-magenta text-sm md:text-xl" id="val-s26u-plan-disc">63,750원</span>
+                            </div>
+                        </div>
                     </div>
-                    <!-- 할인 조건 -->
-                    <div class="bg-blue-50 p-4 rounded-xl text-sm text-gray-700 border border-blue-100 mt-2">
-                        <p class="font-bold text-navy mb-2"><i class="fas fa-check text-blue-500"></i> 할인 조건</p>
-                        <ul class="list-decimal pl-5 space-y-1.5 font-medium">
-                            <li id="val-s26u-cond1">요금제 6개월 유지</li>
-                            <li id="val-s26u-cond2">부가 서비스 3개월 유지_부가 서비스명, 월 1,234원</li>
-                            <li id="val-s26u-cond3">보험 서비스 3개월 유지_보험 서비스명, 월 1,234원</li>
+                    <!-- 할인 조건 (모바일 사이즈 축소) -->
+                    <div class="bg-blue-50 p-2 md:p-4 rounded-lg text-[9px] md:text-sm text-gray-700 border border-blue-100 mt-1">
+                        <p class="font-bold text-navy mb-1"><i class="fas fa-check text-blue-500"></i> 할인 조건</p>
+                        <ul class="list-decimal pl-3 md:pl-5 space-y-0.5 md:space-y-1.5 font-medium">
+                            <li id="val-s26u-cond1" class="truncate">요금제 6개월 유지</li>
+                            <li id="val-s26u-cond2" class="truncate">부가 서비스 3개월 유지</li>
+                            <li id="val-s26u-cond3" class="truncate">보험 서비스 3개월 유지</li>
                         </ul>
                     </div>
                 </div>
-                <button onclick="openModal('갤럭시 S26 울트라')" class="mt-6 w-full py-4 border-2 border-navy text-navy font-bold rounded-xl hover:bg-navy hover:text-white transition-colors">이 모델로 혜택 상담받기</button>
+                <button onclick="openModal('갤럭시 S26 울트라')" class="mt-3 md:mt-6 w-full py-2 md:py-4 border-2 border-navy text-navy font-bold rounded-lg text-xs md:text-lg hover:bg-navy hover:text-white transition-colors">상담받기</button>
             </div>
         </div>
     </section>
 
     <!-- [섹션 4: 추천 라인업] -->
-    <section class="py-12 px-4 max-w-5xl mx-auto border-t border-gray-200">
-        <div class="text-center mb-10"><h2 class="text-2xl font-bold text-navy">취향대로 고르는 <span class="text-magenta">맞춤형 특별 지원 스마트폰</span></h2></div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <section class="py-8 md:py-12 px-2 md:px-4 max-w-5xl mx-auto border-t border-gray-200">
+        <div class="text-center mb-6 md:mb-10"><h2 class="text-base sm:text-lg md:text-2xl font-bold text-navy whitespace-nowrap tracking-tighter">취향대로 고르는 <span class="text-magenta">맞춤형 특별 지원 스마트폰</span></h2></div>
+        
+        <!-- 1열(모바일) / 2열(태블릿) / 4열(PC) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             
             <!-- S26+ -->
-            <div class="bg-white rounded-2xl shadow p-5 border border-gray-100 flex flex-col">
-                <div class="h-40 bg-gray-50 rounded-xl mb-4 flex items-center justify-center overflow-hidden p-2"><img src="s26plus.jpg" alt="갤럭시 S26+" class="w-full h-full object-contain mix-blend-darken"></div>
-                <h3 class="font-bold text-lg mb-3 text-center">갤럭시 S26+</h3>
-                <div class="text-sm space-y-2 mb-4 flex-grow border-t border-gray-100 py-3">
-                    <div class="flex justify-between"><span class="text-gray-500">출고가</span><span class="line-through text-gray-400" id="val-s26p-price">1,353,000원</span></div>
-                    <div class="flex justify-between"><span class="text-magenta font-bold">추가지원금</span><span class="text-magenta font-bold" id="val-s26p-support">353,000원</span></div>
-                    <div class="flex justify-between"><span class="text-gray-700 font-bold">기기값</span><span class="font-bold" id="val-s26p-device">1,000,000원</span></div>
-                    <div class="flex justify-between"><span class="text-gray-500">요금제</span><span id="val-s26p-plan">85,000원</span></div>
+            <div class="bg-white rounded-xl shadow border border-gray-100 flex flex-row lg:flex-col overflow-hidden items-stretch">
+                <div class="w-1/2 lg:w-full p-3 bg-gray-50 flex flex-col items-center justify-center border-r lg:border-r-0 lg:border-b border-gray-100">
+                    <h3 class="font-bold text-sm md:text-lg mb-2 text-center text-navy whitespace-nowrap tracking-tighter">갤럭시 S26+</h3>
+                    <img src="s26plus.jpg" alt="갤럭시 S26+" class="h-24 lg:h-40 object-contain mix-blend-darken">
                 </div>
-                <!-- 할인 조건 -->
-                <div class="bg-blue-50 p-3 rounded-lg text-[11px] text-gray-700 border border-blue-100 mb-4 text-left leading-tight">
-                    <p class="font-bold text-navy mb-1"><i class="fas fa-check text-blue-500"></i> 할인 조건</p>
-                    <ul class="list-decimal pl-4 space-y-1">
-                        <li id="val-s26p-cond1">요금제 6개월 유지</li>
-                        <li id="val-s26p-cond2">부가 서비스 3개월 유지_부가 서비스명, 월 1,234원</li>
-                        <li id="val-s26p-cond3">보험 서비스 3개월 유지_보험 서비스명, 월 1,234원</li>
-                    </ul>
+                <div class="w-1/2 lg:w-full p-3 flex flex-col justify-between">
+                    <div class="space-y-1 mb-2">
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-gray-500">출고가</span><span class="line-through text-gray-400" id="val-s26p-price">1,353,000원</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-blue-500 font-bold">선택약정</span><span class="text-blue-500 font-bold" id="val-s26p-discount">선택약정 25% 할인</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-magenta font-bold tracking-tighter">추가지원금</span><span class="text-magenta font-bold" id="val-s26p-support">353,000원</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-gray-700 font-bold">기기값</span><span class="font-bold" id="val-s26p-device">1,000,000원</span></div>
+                        <div class="flex justify-between items-end pt-1"><span class="text-gray-500 text-[10px] md:text-sm">월요금</span>
+                            <div class="text-right leading-tight tracking-tighter">
+                                <span class="text-[8px] md:text-xs"><span class="text-gray-400 line-through" id="val-s26p-plan">85,000원</span><br class="lg:hidden"><span class="text-blue-500 font-bold lg:ml-1">선택약정 25% 할인</span></span><br>
+                                <span class="font-bold text-magenta text-sm md:text-base" id="val-s26p-plan-disc">63,750원</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 p-1.5 md:p-3 rounded text-[9px] md:text-xs text-gray-700 border border-blue-100 mb-2 leading-tight">
+                        <p class="font-bold text-navy mb-0.5"><i class="fas fa-check text-blue-500"></i> 조건</p>
+                        <ul class="list-decimal pl-3 space-y-0.5">
+                            <li id="val-s26p-cond1" class="truncate">요금제 6개월</li>
+                            <li id="val-s26p-cond2" class="truncate">부가 3개월</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('갤럭시 S26+')" class="w-full py-1.5 md:py-2 bg-gray-800 text-white rounded text-[11px] md:text-sm hover:bg-magenta transition-colors whitespace-nowrap">상담 신청</button>
                 </div>
-                <button onclick="openModal('갤럭시 S26+')" class="w-full py-2 bg-gray-800 text-white rounded-lg text-sm hover:bg-magenta transition-colors">상담 신청</button>
             </div>
 
             <!-- S26 -->
-            <div class="bg-white rounded-2xl shadow p-5 border border-gray-100 flex flex-col">
-                <div class="h-40 bg-gray-50 rounded-xl mb-4 flex items-center justify-center overflow-hidden p-2"><img src="s26.jpg" alt="갤럭시 S26" class="w-full h-full object-contain mix-blend-darken"></div>
-                <h3 class="font-bold text-lg mb-3 text-center">갤럭시 S26</h3>
-                <div class="text-sm space-y-2 mb-4 flex-grow border-t border-gray-100 py-3">
-                    <div class="flex justify-between"><span class="text-gray-500">출고가</span><span class="line-through text-gray-400" id="val-s26-price">1,155,000원</span></div>
-                    <div class="flex justify-between"><span class="text-magenta font-bold">추가지원금</span><span class="text-magenta font-bold" id="val-s26-support">155,000원</span></div>
-                    <div class="flex justify-between"><span class="text-gray-700 font-bold">기기값</span><span class="font-bold" id="val-s26-device">1,000,000원</span></div>
-                    <div class="flex justify-between"><span class="text-gray-500">요금제</span><span id="val-s26-plan">61,000원</span></div>
+            <div class="bg-white rounded-xl shadow border border-gray-100 flex flex-row lg:flex-col overflow-hidden items-stretch">
+                <div class="w-1/2 lg:w-full p-3 bg-gray-50 flex flex-col items-center justify-center border-r lg:border-r-0 lg:border-b border-gray-100">
+                    <h3 class="font-bold text-sm md:text-lg mb-2 text-center text-navy whitespace-nowrap tracking-tighter">갤럭시 S26</h3>
+                    <img src="s26.jpg" alt="갤럭시 S26" class="h-24 lg:h-40 object-contain mix-blend-darken">
                 </div>
-                <!-- 할인 조건 -->
-                <div class="bg-blue-50 p-3 rounded-lg text-[11px] text-gray-700 border border-blue-100 mb-4 text-left leading-tight">
-                    <p class="font-bold text-navy mb-1"><i class="fas fa-check text-blue-500"></i> 할인 조건</p>
-                    <ul class="list-decimal pl-4 space-y-1">
-                        <li id="val-s26-cond1">요금제 6개월 유지</li>
-                        <li id="val-s26-cond2">부가 서비스 3개월 유지_부가 서비스명, 월 1,234원</li>
-                        <li id="val-s26-cond3">보험 서비스 3개월 유지_보험 서비스명, 월 1,234원</li>
-                    </ul>
+                <div class="w-1/2 lg:w-full p-3 flex flex-col justify-between">
+                    <div class="space-y-1 mb-2">
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-gray-500">출고가</span><span class="line-through text-gray-400" id="val-s26-price">1,155,000원</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-blue-500 font-bold">선택약정</span><span class="text-blue-500 font-bold" id="val-s26-discount">선택약정 25% 할인</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-magenta font-bold tracking-tighter">추가지원금</span><span class="text-magenta font-bold" id="val-s26-support">155,000원</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-gray-700 font-bold">기기값</span><span class="font-bold" id="val-s26-device">1,000,000원</span></div>
+                        <div class="flex justify-between items-end pt-1"><span class="text-gray-500 text-[10px] md:text-sm">월요금</span>
+                            <div class="text-right leading-tight tracking-tighter">
+                                <span class="text-[8px] md:text-xs"><span class="text-gray-400 line-through" id="val-s26-plan">61,000원</span><br class="lg:hidden"><span class="text-blue-500 font-bold lg:ml-1">선택약정 25% 할인</span></span><br>
+                                <span class="font-bold text-magenta text-sm md:text-base" id="val-s26-plan-disc">45,750원</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 p-1.5 md:p-3 rounded text-[9px] md:text-xs text-gray-700 border border-blue-100 mb-2 leading-tight">
+                        <p class="font-bold text-navy mb-0.5"><i class="fas fa-check text-blue-500"></i> 조건</p>
+                        <ul class="list-decimal pl-3 space-y-0.5">
+                            <li id="val-s26-cond1" class="truncate">요금제 6개월</li>
+                            <li id="val-s26-cond2" class="truncate">부가 3개월</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('갤럭시 S26')" class="w-full py-1.5 md:py-2 bg-gray-800 text-white rounded text-[11px] md:text-sm hover:bg-magenta transition-colors whitespace-nowrap">상담 신청</button>
                 </div>
-                <button onclick="openModal('갤럭시 S26')" class="w-full py-2 bg-gray-800 text-white rounded-lg text-sm hover:bg-magenta transition-colors">상담 신청</button>
             </div>
 
             <!-- iPhone 17 Pro -->
-            <div class="bg-white rounded-2xl shadow p-5 border border-gray-100 flex flex-col">
-                <div class="h-40 bg-gray-50 rounded-xl mb-4 flex items-center justify-center overflow-hidden p-2"><img src="iphone17pro.jpg" alt="아이폰17 프로" class="w-full h-full object-contain mix-blend-darken"></div>
-                <h3 class="font-bold text-lg mb-3 text-center">아이폰17 프로</h3>
-                <div class="text-sm space-y-2 mb-4 flex-grow border-t border-gray-100 py-3">
-                    <div class="flex justify-between"><span class="text-gray-500">출고가</span><span class="line-through text-gray-400" id="val-ip17-price">1,550,000원</span></div>
-                    <div class="flex justify-between"><span class="text-magenta font-bold">추가지원금</span><span class="text-magenta font-bold" id="val-ip17-support">250,000원</span></div>
-                    <div class="flex justify-between"><span class="text-gray-700 font-bold">기기값</span><span class="font-bold" id="val-ip17-device">1,300,000원</span></div>
-                    <div class="flex justify-between"><span class="text-gray-500">요금제</span><span id="val-ip17-plan">85,000원</span></div>
+            <div class="bg-white rounded-xl shadow border border-gray-100 flex flex-row lg:flex-col overflow-hidden items-stretch">
+                <div class="w-1/2 lg:w-full p-3 bg-gray-50 flex flex-col items-center justify-center border-r lg:border-r-0 lg:border-b border-gray-100">
+                    <h3 class="font-bold text-sm md:text-lg mb-2 text-center text-navy whitespace-nowrap tracking-tighter">아이폰17 프로</h3>
+                    <img src="iphone17pro.jpg" alt="아이폰17 프로" class="h-24 lg:h-40 object-contain mix-blend-darken">
                 </div>
-                <!-- 할인 조건 -->
-                <div class="bg-blue-50 p-3 rounded-lg text-[11px] text-gray-700 border border-blue-100 mb-4 text-left leading-tight">
-                    <p class="font-bold text-navy mb-1"><i class="fas fa-check text-blue-500"></i> 할인 조건</p>
-                    <ul class="list-decimal pl-4 space-y-1">
-                        <li id="val-ip17-cond1">요금제 6개월 유지</li>
-                        <li id="val-ip17-cond2">부가 서비스 3개월 유지_부가 서비스명, 월 1,234원</li>
-                        <li id="val-ip17-cond3">보험 서비스 3개월 유지_보험 서비스명, 월 1,234원</li>
-                    </ul>
+                <div class="w-1/2 lg:w-full p-3 flex flex-col justify-between">
+                    <div class="space-y-1 mb-2">
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-gray-500">출고가</span><span class="line-through text-gray-400" id="val-ip17-price">1,550,000원</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-blue-500 font-bold">선택약정</span><span class="text-blue-500 font-bold" id="val-ip17-discount">선택약정 25% 할인</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-magenta font-bold tracking-tighter">추가지원금</span><span class="text-magenta font-bold" id="val-ip17-support">250,000원</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-gray-700 font-bold">기기값</span><span class="font-bold" id="val-ip17-device">1,300,000원</span></div>
+                        <div class="flex justify-between items-end pt-1"><span class="text-gray-500 text-[10px] md:text-sm">월요금</span>
+                            <div class="text-right leading-tight tracking-tighter">
+                                <span class="text-[8px] md:text-xs"><span class="text-gray-400 line-through" id="val-ip17-plan">85,000원</span><br class="lg:hidden"><span class="text-blue-500 font-bold lg:ml-1">선택약정 25% 할인</span></span><br>
+                                <span class="font-bold text-magenta text-sm md:text-base" id="val-ip17-plan-disc">63,750원</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 p-1.5 md:p-3 rounded text-[9px] md:text-xs text-gray-700 border border-blue-100 mb-2 leading-tight">
+                        <p class="font-bold text-navy mb-0.5"><i class="fas fa-check text-blue-500"></i> 조건</p>
+                        <ul class="list-decimal pl-3 space-y-0.5">
+                            <li id="val-ip17-cond1" class="truncate">요금제 6개월</li>
+                            <li id="val-ip17-cond2" class="truncate">부가 3개월</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('아이폰17 프로')" class="w-full py-1.5 md:py-2 bg-gray-800 text-white rounded text-[11px] md:text-sm hover:bg-magenta transition-colors whitespace-nowrap">상담 신청</button>
                 </div>
-                <button onclick="openModal('아이폰17 프로')" class="w-full py-2 bg-gray-800 text-white rounded-lg text-sm hover:bg-magenta transition-colors">상담 신청</button>
             </div>
 
             <!-- Kids Phone -->
-            <div class="bg-white rounded-2xl shadow p-5 border border-gray-100 flex flex-col relative">
-                <span class="absolute top-2 left-2 bg-magenta text-white text-[10px] px-2 py-1 rounded font-bold z-10">기기값 무료!</span>
-                <div class="h-40 bg-gray-50 rounded-xl mb-4 flex items-center justify-center p-2"><img src="kidsphone2.jpg" alt="무너에디션2 키즈폰" class="w-full h-full object-contain mix-blend-darken"></div>
-                <h3 class="font-bold text-lg mb-3 text-center text-magenta">무너에디션2 키즈폰</h3>
-                <div class="text-sm space-y-2 mb-4 flex-grow border-t border-gray-100 py-3">
-                    <div class="flex justify-between"><span class="text-gray-500">출고가</span><span class="line-through text-gray-400" id="val-kids-price">319,000원</span></div>
-                    <div class="flex justify-between"><span class="text-magenta font-bold">추가지원금</span><span class="text-magenta font-bold" id="val-kids-support">319,000원</span></div>
-                    <div class="flex justify-between"><span class="text-gray-700 font-bold">기기값</span><span class="font-bold" id="val-kids-device">0원</span></div>
-                    <div class="flex justify-between"><span class="text-gray-500">요금제</span><span id="val-kids-plan">29,000원</span></div>
+            <div class="bg-white rounded-xl shadow border border-gray-100 flex flex-row lg:flex-col overflow-hidden items-stretch">
+                <div class="w-1/2 lg:w-full p-3 bg-gray-50 flex flex-col items-center justify-center border-r lg:border-r-0 lg:border-b border-gray-100 relative">
+                    <span class="absolute top-1 left-1 lg:top-2 lg:left-2 bg-magenta text-white text-[8px] lg:text-[10px] px-1.5 py-0.5 rounded font-bold z-10 whitespace-nowrap">기기값 무료!</span>
+                    <h3 class="font-bold text-sm md:text-lg mb-2 text-center text-magenta whitespace-nowrap tracking-tighter">무너에디션2</h3>
+                    <img src="kidsphone2.jpg" alt="무너에디션2 키즈폰" class="h-24 lg:h-40 object-contain mix-blend-darken">
                 </div>
-                <!-- 할인 조건 -->
-                <div class="bg-blue-50 p-3 rounded-lg text-[11px] text-gray-700 border border-blue-100 mb-4 text-left leading-tight">
-                    <p class="font-bold text-navy mb-1"><i class="fas fa-check text-blue-500"></i> 할인 조건</p>
-                    <ul class="list-decimal pl-4 space-y-1">
-                        <li id="val-kids-cond1">요금제 6개월 유지</li>
-                        <li id="val-kids-cond2">부가 서비스 3개월 유지_부가 서비스명, 월 1,234원</li>
-                        <li id="val-kids-cond3">보험 서비스 3개월 유지_보험 서비스명, 월 1,234원</li>
-                    </ul>
+                <div class="w-1/2 lg:w-full p-3 flex flex-col justify-between">
+                    <div class="space-y-1 mb-2">
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-gray-500">출고가</span><span class="line-through text-gray-400" id="val-kids-price">319,000원</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-blue-500 font-bold">선택약정</span><span class="text-blue-500 font-bold" id="val-kids-discount">선택약정 25% 할인</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-magenta font-bold tracking-tighter">추가지원금</span><span class="text-magenta font-bold" id="val-kids-support">319,000원</span></div>
+                        <div class="flex justify-between items-center text-[10px] md:text-sm"><span class="text-gray-700 font-bold">기기값</span><span class="font-bold" id="val-kids-device">0원</span></div>
+                        <div class="flex justify-between items-end pt-1"><span class="text-gray-500 text-[10px] md:text-sm">월요금</span>
+                            <div class="text-right leading-tight tracking-tighter">
+                                <span class="text-[8px] md:text-xs"><span class="text-gray-400 line-through" id="val-kids-plan">29,000원</span><br class="lg:hidden"><span class="text-blue-500 font-bold lg:ml-1">선택약정 25% 할인</span></span><br>
+                                <span class="font-bold text-magenta text-sm md:text-base" id="val-kids-plan-disc">21,750원</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 p-1.5 md:p-3 rounded text-[9px] md:text-xs text-gray-700 border border-blue-100 mb-2 leading-tight">
+                        <p class="font-bold text-navy mb-0.5"><i class="fas fa-check text-blue-500"></i> 조건</p>
+                        <ul class="list-decimal pl-3 space-y-0.5">
+                            <li id="val-kids-cond1" class="truncate">요금제 6개월</li>
+                            <li id="val-kids-cond2" class="truncate">부가 3개월</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('키즈폰')" class="w-full py-1.5 md:py-2 bg-gray-800 text-white rounded text-[11px] md:text-sm hover:bg-magenta transition-colors whitespace-nowrap">상담 신청</button>
                 </div>
-                <button onclick="openModal('키즈폰')" class="w-full py-2 bg-gray-800 text-white rounded-lg text-sm hover:bg-magenta transition-colors">상담 신청</button>
             </div>
         </div>
     </section>
 
-    <!-- [섹션 7: 영수증 UI] -->
-    <section class="py-16 px-4 bg-gray-100">
-        <div class="max-w-4xl mx-auto bg-magenta text-white text-center py-6 rounded-2xl shadow-xl transform -translate-y-6 relative z-10 border-4 border-white">
-            <h2 class="text-3xl md:text-5xl font-black tracking-tight">쓰던 폰 그대로 <span class="text-yellow-300">110만원 받기!</span></h2>
-        </div>
-        <div class="max-w-md mx-auto mt-8 bg-white pt-8 pb-4 px-6 shadow-2xl relative">
+    <!-- [섹션 5: 영수증 UI] -->
+    <section class="py-10 md:py-16 px-4 bg-gray-100">
+        <!-- 텍스트 크기 50% 축소 -->
+        <div class="text-center mb-4 md:mb-6"><h2 class="text-sm sm:text-base md:text-xl font-black text-navy whitespace-nowrap tracking-tighter">4인 가족 결합 시 <span class="text-magenta">청구 요금 예시</span></h2></div>
+        
+        <div class="max-w-md mx-auto bg-white pt-8 pb-4 px-6 shadow-2xl relative">
             <div class="receipt-edge absolute top-0 left-0 w-full"></div>
-            <div class="text-center border-b-2 border-dashed border-gray-300 pb-6 mb-6">
-                <h3 class="font-mono text-2xl font-bold text-gray-800">U+ 가족 결합 영수증</h3>
-                <p class="font-mono text-gray-500 text-sm mt-1">새 폰 구매 없이 통신사 이동 혜택</p>
+            <div class="text-center border-b-2 border-dashed border-gray-300 pb-5 mb-5">
+                <h3 class="font-mono text-xl font-bold text-gray-800">U+ 가족 결합 영수증</h3>
+                <p class="font-mono text-gray-500 text-xs mt-1">새 폰 구매 없이 통신사 이동 혜택</p>
             </div>
-            <div class="font-mono text-gray-700 space-y-5 mb-6">
+            <div class="font-mono text-gray-700 space-y-4 mb-5 text-sm">
                 <div>
                     <div class="flex justify-between"><span>성인 휴대폰 (2명)</span><span>136,500원</span></div>
-                    <div class="text-xs text-gray-500 text-right mt-1">인당 68,250원</div>
-                    <div class="text-[11px] text-magenta font-sans font-bold text-right mt-1 tracking-tight word-keep">(유튜브 프리미엄, 넷플릭스 등 선택 2가지 무료)</div>
+                    <div class="text-[10px] text-gray-500 text-right mt-1">인당 68,250원</div>
+                    <div class="text-[9px] md:text-[11px] text-magenta font-sans font-bold text-right mt-1 tracking-tight whitespace-nowrap">(유튜브 프리미엄, 넷플릭스 등 선택 2가지 무료)</div>
                 </div>
                 <div>
                     <div class="flex justify-between"><span>미성년자 휴대폰 (2명)</span><span class="text-blue-600 font-bold">0원</span></div>
-                    <div class="text-xs text-gray-500 text-right mt-1">인당 0원</div>
+                    <div class="text-[10px] text-gray-500 text-right mt-1">인당 0원</div>
                 </div>
                 <div class="flex justify-between text-navy font-bold pt-2"><span>인터넷 500M + TV</span><span>36,300원</span></div>
             </div>
             <div class="border-t-4 border-gray-800 pt-4 mb-4">
-                <div class="flex justify-between items-end"><span class="font-mono font-bold text-gray-800">4인가족 월 청구액</span><span class="font-mono text-3xl font-black text-navy">172,800원</span></div>
+                <div class="flex justify-between items-end"><span class="font-mono font-bold text-gray-800 text-sm">4인가족 월 청구액</span><span class="font-mono text-2xl md:text-3xl font-black text-navy">172,800원</span></div>
             </div>
-            <div class="bg-yellow-100 p-4 rounded text-center border border-yellow-300 mt-6"><p class="text-yellow-800 font-bold">★ 가입 즉시 특별 현금 지원금 지급 ★</p></div>
+            <div class="bg-yellow-100 p-3 rounded text-center border border-yellow-300 mt-5"><p class="text-yellow-800 font-bold text-xs md:text-sm tracking-tighter">★ 가입 즉시 특별 현금 지원금 지급 ★</p></div>
             <div class="receipt-edge-bottom absolute bottom-0 left-0 w-full"></div>
         </div>
-        <div class="text-center mt-12">
-            <button onclick="openModal('단말기 없이 요금할인/결합')" class="bg-magenta hover:bg-magenta-hover text-white font-bold py-4 px-10 rounded-full text-xl shadow-xl transform transition hover:scale-105 w-full max-w-sm">우리 가족 맞춤 요금 계산해 보기</button>
+        <div class="text-center mt-8 md:mt-12">
+            <button onclick="openModal('단말기 없이 요금할인/결합')" class="bg-magenta hover:bg-magenta-hover text-white font-bold py-3 md:py-4 px-6 md:px-10 rounded-full text-sm md:text-xl shadow-xl transform transition hover:scale-105 w-full max-w-sm whitespace-nowrap tracking-tighter">우리 가족 맞춤 요금 계산해 보기</button>
         </div>
     </section>
 
     <!-- [푸터] -->
-    <footer class="bg-gray-900 text-gray-400 py-12 px-4 pb-24 md:pb-12">
+    <footer class="bg-gray-900 text-gray-400 py-8 md:py-12 px-4 pb-24 md:pb-12">
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
             <div class="mb-6 md:mb-0">
-                <h2 class="text-white text-xl font-bold mb-4">믿을 수 있는 특판 파트너, 한빛컴퍼니</h2>
-                <div class="text-sm space-y-1">
-                    <p>상호명: 한빛컴퍼니 | 대표자: 김영주 | 사업자등록번호: 652-06-01248</p>
+                <h2 class="text-white text-lg md:text-xl font-bold mb-3 tracking-tighter whitespace-nowrap">믿을 수 있는 특판 파트너, 한빛컴퍼니</h2>
+                <div class="text-xs md:text-sm space-y-1 tracking-tight">
+                    <p>상호명: 한빛컴퍼니 | 대표자: 김영주 | 사업자번호: 652-06-01248</p>
                     <p>대표번호: 054-443-8001 | 운영시간: 평일, 휴일 10:00 ~ 20:00</p>
-                    <p class="mt-4 text-gray-500">본 사이트는 AGC화인테크노 임직원을 위한 전용 특판 안내 페이지입니다.</p>
+                    <p class="mt-3 text-gray-500">본 사이트는 AGC화인테크노 임직원 전용 안내 페이지입니다.</p>
                 </div>
             </div>
-            <div class="flex flex-col gap-3 w-full md:w-auto">
-                <a href="http://pf.kakao.com/_rExbYG/chat" target="_blank" class="bg-yellow-400 text-yellow-900 font-bold py-3 px-6 rounded-lg text-center hover:bg-yellow-500 transition-colors flex items-center justify-center gap-2"><i class="fas fa-comment"></i> 카카오톡 채널 상담</a>
-                <!-- 매장 위치 링크는 여기에 수정하세요 -->
-                <a href="https://naver.me/GSc1O9Tw" target="_blank" class="bg-gray-800 text-white border border-gray-700 font-medium py-3 px-6 rounded-lg text-center hover:bg-gray-700 transition-colors flex items-center justify-center gap-2"><i class="fas fa-map-marker-alt"></i> 매장 위치 보기</a>
-                <button onclick="openPasswordModal()" class="bg-gray-700 text-gray-300 font-medium py-3 px-6 rounded-lg text-center hover:bg-gray-600 transition-colors flex items-center justify-center gap-2"><i class="fas fa-cog"></i> 요금 관리(관리자용)</button>
+            <div class="flex flex-col gap-2 w-full md:w-auto">
+                <a href="http://pf.kakao.com/_rExbYG/chat" target="_blank" class="bg-yellow-400 text-yellow-900 font-bold py-2.5 px-6 rounded-lg text-center text-sm hover:bg-yellow-500 transition-colors flex items-center justify-center gap-2 whitespace-nowrap"><i class="fas fa-comment"></i> 카카오톡 채널 상담</a>
+                <a href="https://naver.me/GSc1O9Tw" target="_blank" class="bg-gray-800 text-white border border-gray-700 font-medium py-2.5 px-6 rounded-lg text-center text-sm hover:bg-gray-700 transition-colors flex items-center justify-center gap-2 whitespace-nowrap"><i class="fas fa-map-marker-alt"></i> 매장 위치 보기</a>
+                <button onclick="openPasswordModal()" class="bg-gray-700 text-gray-300 font-medium py-2.5 px-6 rounded-lg text-center text-xs hover:bg-gray-600 transition-colors flex items-center justify-center gap-2 whitespace-nowrap"><i class="fas fa-cog"></i> 요금 관리(관리자용)</button>
             </div>
         </div>
     </footer>
 
     <div class="fixed bottom-6 right-6 z-40">
-        <button onclick="openModal()" class="bg-magenta text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center text-2xl hover:bg-magenta-hover hover:scale-110 transition-all duration-300"><i class="fas fa-headset"></i></button>
+        <button onclick="openModal()" class="bg-magenta text-white w-14 h-14 md:w-16 md:h-16 rounded-full shadow-2xl flex items-center justify-center text-xl md:text-2xl hover:bg-magenta-hover hover:scale-110 transition-all duration-300"><i class="fas fa-headset"></i></button>
     </div>
 
     <!-- [상담 신청 모달] -->
@@ -301,7 +373,7 @@
                 </div>
                 <div>
                     <label class="block text-sm font-bold text-gray-700 mb-1">관심 모델</label>
-                    <select id="modelSelect" class="w-full border rounded-lg px-4 py-2 bg-white">
+                    <select id="modelSelect" class="w-full border rounded-lg px-4 py-2 bg-white text-sm md:text-base">
                         <option value="갤럭시 S26 울트라">갤럭시 S26 울트라</option><option value="갤럭시 S26+">갤럭시 S26+</option>
                         <option value="갤럭시 S26">갤럭시 S26</option><option value="아이폰17 프로">아이폰17 프로</option>
                         <option value="키즈폰">무너에디션2 키즈폰</option><option value="단말기 없이 요금할인/결합">결합형(110만원 지원)</option>
@@ -309,13 +381,13 @@
                 </div>
                 <div>
                     <label class="block text-sm font-bold text-gray-700 mb-1">통화 가능 시간대</label>
-                    <select id="timeSelect" class="w-full border rounded-lg px-4 py-2 bg-white">
+                    <select id="timeSelect" class="w-full border rounded-lg px-4 py-2 bg-white text-sm md:text-base">
                         <option value="아무때나">아무때나 가능</option><option value="오전">오전</option><option value="오후">오후</option><option value="저녁">퇴근 후</option>
                     </select>
                 </div>
                 <div class="mt-5 text-center">
-                    <p class="text-sm font-bold text-magenta mb-2 bg-pink-50 py-2 rounded-lg border border-pink-100"><i class="fas fa-info-circle"></i> 상담하기 누르신 후에 입력창을 길게 눌러서 '붙여넣기' 하세요</p>
-                    <button type="submit" class="w-full bg-yellow-400 text-yellow-900 font-bold py-3 rounded-xl flex items-center justify-center gap-2"><i class="fas fa-comment"></i> 카카오 채팅 상담하기</button>
+                    <p class="text-[10px] md:text-xs font-bold text-magenta mb-2 bg-pink-50 py-2 rounded-lg border border-pink-100 tracking-tighter"><i class="fas fa-info-circle"></i> 상담하기 누르신 후에 입력창을 길게 눌러서 '붙여넣기' 하세요</p>
+                    <button type="submit" class="w-full bg-yellow-400 text-yellow-900 font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm md:text-base"><i class="fas fa-comment"></i> 카카오 채팅 상담하기</button>
                 </div>
             </form>
         </div>
@@ -340,81 +412,91 @@
         <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden flex flex-col max-h-[90vh]">
             <div class="bg-gray-800 py-4 px-6 flex justify-between text-white shrink-0"><h3 class="font-bold"><i class="fas fa-cog"></i> 단말기 요금 관리 시스템</h3><button onclick="closeAdminModal()"><i class="fas fa-times"></i></button></div>
             <div class="bg-blue-50 px-6 py-3 border-b flex justify-between shrink-0"><p class="text-xs text-blue-800"><i class="fas fa-info-circle"></i> 변경된 값은 즉시 반영됩니다.</p><div id="admin-save-msg" class="hidden bg-green-500 text-white text-xs px-3 py-1 rounded font-bold">저장되었습니다!</div></div>
-            <div class="p-6 overflow-y-auto flex-grow bg-gray-50 space-y-6">
+            <div class="p-4 md:p-6 overflow-y-auto flex-grow bg-gray-50 space-y-6">
                 <!-- S26 Ultra -->
                 <div class="bg-white p-4 border rounded-xl shadow-sm">
                     <h4 class="font-bold text-magenta mb-3 border-b pb-2">1. 갤럭시 S26 울트라</h4>
-                    <div class="grid grid-cols-2 gap-4 text-sm">
-                        <div><label class="text-gray-500 text-xs">출고가</label><input type="text" id="admin-s26u-price" class="w-full border rounded p-2"></div>
-                        <div><label class="text-magenta text-xs font-bold">추가지원금</label><input type="text" id="admin-s26u-support" class="w-full border rounded p-2"></div>
-                        <div><label class="text-gray-800 text-xs font-bold">기기값</label><input type="text" id="admin-s26u-device" class="w-full border rounded p-2"></div>
-                        <div><label class="text-gray-500 text-xs">요금제</label><input type="text" id="admin-s26u-plan" class="w-full border rounded p-2"></div>
+                    <div class="grid grid-cols-2 gap-3 md:gap-4 text-sm">
+                        <div><label class="text-gray-500 text-[10px] md:text-xs">출고가</label><input type="text" id="admin-s26u-price" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-blue-500 text-[10px] md:text-xs font-bold">선택약정</label><input type="text" id="admin-s26u-discount" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-magenta text-[10px] md:text-xs font-bold">추가지원금</label><input type="text" id="admin-s26u-support" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-gray-800 text-[10px] md:text-xs font-bold">기기값</label><input type="text" id="admin-s26u-device" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-gray-500 text-[10px] md:text-xs">월요금(원래)</label><input type="text" id="admin-s26u-plan" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-magenta text-[10px] md:text-xs font-bold">월요금(할인)</label><input type="text" id="admin-s26u-plan-disc" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
                         <div class="col-span-2 border-t border-dashed my-1"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 1</label><input type="text" id="admin-s26u-cond1" class="w-full border rounded p-2 text-xs"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 2</label><input type="text" id="admin-s26u-cond2" class="w-full border rounded p-2 text-xs"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 3</label><input type="text" id="admin-s26u-cond3" class="w-full border rounded p-2 text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 1</label><input type="text" id="admin-s26u-cond1" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 2</label><input type="text" id="admin-s26u-cond2" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 3</label><input type="text" id="admin-s26u-cond3" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
                     </div>
                 </div>
                 <!-- S26+ -->
                 <div class="bg-white p-4 border rounded-xl shadow-sm">
                     <h4 class="font-bold text-navy mb-3 border-b pb-2">2. 갤럭시 S26+</h4>
-                    <div class="grid grid-cols-2 gap-4 text-sm">
-                        <div><label class="text-gray-500 text-xs">출고가</label><input type="text" id="admin-s26p-price" class="w-full border rounded p-2"></div>
-                        <div><label class="text-magenta text-xs font-bold">추가지원금</label><input type="text" id="admin-s26p-support" class="w-full border rounded p-2"></div>
-                        <div><label class="text-gray-800 text-xs font-bold">기기값</label><input type="text" id="admin-s26p-device" class="w-full border rounded p-2"></div>
-                        <div><label class="text-gray-500 text-xs">요금제</label><input type="text" id="admin-s26p-plan" class="w-full border rounded p-2"></div>
+                    <div class="grid grid-cols-2 gap-3 md:gap-4 text-sm">
+                        <div><label class="text-gray-500 text-[10px] md:text-xs">출고가</label><input type="text" id="admin-s26p-price" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-blue-500 text-[10px] md:text-xs font-bold">선택약정</label><input type="text" id="admin-s26p-discount" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-magenta text-[10px] md:text-xs font-bold">추가지원금</label><input type="text" id="admin-s26p-support" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-gray-800 text-[10px] md:text-xs font-bold">기기값</label><input type="text" id="admin-s26p-device" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-gray-500 text-[10px] md:text-xs">월요금(원래)</label><input type="text" id="admin-s26p-plan" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-magenta text-[10px] md:text-xs font-bold">월요금(할인)</label><input type="text" id="admin-s26p-plan-disc" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
                         <div class="col-span-2 border-t border-dashed my-1"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 1</label><input type="text" id="admin-s26p-cond1" class="w-full border rounded p-2 text-xs"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 2</label><input type="text" id="admin-s26p-cond2" class="w-full border rounded p-2 text-xs"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 3</label><input type="text" id="admin-s26p-cond3" class="w-full border rounded p-2 text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 1</label><input type="text" id="admin-s26p-cond1" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 2</label><input type="text" id="admin-s26p-cond2" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 3</label><input type="text" id="admin-s26p-cond3" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
                     </div>
                 </div>
                 <!-- S26 -->
                 <div class="bg-white p-4 border rounded-xl shadow-sm">
                     <h4 class="font-bold text-navy mb-3 border-b pb-2">3. 갤럭시 S26</h4>
-                    <div class="grid grid-cols-2 gap-4 text-sm">
-                        <div><label class="text-gray-500 text-xs">출고가</label><input type="text" id="admin-s26-price" class="w-full border rounded p-2"></div>
-                        <div><label class="text-magenta text-xs font-bold">추가지원금</label><input type="text" id="admin-s26-support" class="w-full border rounded p-2"></div>
-                        <div><label class="text-gray-800 text-xs font-bold">기기값</label><input type="text" id="admin-s26-device" class="w-full border rounded p-2"></div>
-                        <div><label class="text-gray-500 text-xs">요금제</label><input type="text" id="admin-s26-plan" class="w-full border rounded p-2"></div>
+                    <div class="grid grid-cols-2 gap-3 md:gap-4 text-sm">
+                        <div><label class="text-gray-500 text-[10px] md:text-xs">출고가</label><input type="text" id="admin-s26-price" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-blue-500 text-[10px] md:text-xs font-bold">선택약정</label><input type="text" id="admin-s26-discount" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-magenta text-[10px] md:text-xs font-bold">추가지원금</label><input type="text" id="admin-s26-support" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-gray-800 text-[10px] md:text-xs font-bold">기기값</label><input type="text" id="admin-s26-device" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-gray-500 text-[10px] md:text-xs">월요금(원래)</label><input type="text" id="admin-s26-plan" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-magenta text-[10px] md:text-xs font-bold">월요금(할인)</label><input type="text" id="admin-s26-plan-disc" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
                         <div class="col-span-2 border-t border-dashed my-1"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 1</label><input type="text" id="admin-s26-cond1" class="w-full border rounded p-2 text-xs"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 2</label><input type="text" id="admin-s26-cond2" class="w-full border rounded p-2 text-xs"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 3</label><input type="text" id="admin-s26-cond3" class="w-full border rounded p-2 text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 1</label><input type="text" id="admin-s26-cond1" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 2</label><input type="text" id="admin-s26-cond2" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 3</label><input type="text" id="admin-s26-cond3" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
                     </div>
                 </div>
                 <!-- IP17 -->
                 <div class="bg-white p-4 border rounded-xl shadow-sm">
                     <h4 class="font-bold text-navy mb-3 border-b pb-2">4. 아이폰17 프로</h4>
-                    <div class="grid grid-cols-2 gap-4 text-sm">
-                        <div><label class="text-gray-500 text-xs">출고가</label><input type="text" id="admin-ip17-price" class="w-full border rounded p-2"></div>
-                        <div><label class="text-magenta text-xs font-bold">추가지원금</label><input type="text" id="admin-ip17-support" class="w-full border rounded p-2"></div>
-                        <div><label class="text-gray-800 text-xs font-bold">기기값</label><input type="text" id="admin-ip17-device" class="w-full border rounded p-2"></div>
-                        <div><label class="text-gray-500 text-xs">요금제</label><input type="text" id="admin-ip17-plan" class="w-full border rounded p-2"></div>
+                    <div class="grid grid-cols-2 gap-3 md:gap-4 text-sm">
+                        <div><label class="text-gray-500 text-[10px] md:text-xs">출고가</label><input type="text" id="admin-ip17-price" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-blue-500 text-[10px] md:text-xs font-bold">선택약정</label><input type="text" id="admin-ip17-discount" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-magenta text-[10px] md:text-xs font-bold">추가지원금</label><input type="text" id="admin-ip17-support" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-gray-800 text-[10px] md:text-xs font-bold">기기값</label><input type="text" id="admin-ip17-device" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-gray-500 text-[10px] md:text-xs">월요금(원래)</label><input type="text" id="admin-ip17-plan" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-magenta text-[10px] md:text-xs font-bold">월요금(할인)</label><input type="text" id="admin-ip17-plan-disc" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
                         <div class="col-span-2 border-t border-dashed my-1"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 1</label><input type="text" id="admin-ip17-cond1" class="w-full border rounded p-2 text-xs"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 2</label><input type="text" id="admin-ip17-cond2" class="w-full border rounded p-2 text-xs"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 3</label><input type="text" id="admin-ip17-cond3" class="w-full border rounded p-2 text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 1</label><input type="text" id="admin-ip17-cond1" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 2</label><input type="text" id="admin-ip17-cond2" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 3</label><input type="text" id="admin-ip17-cond3" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
                     </div>
                 </div>
                 <!-- Kids -->
                 <div class="bg-white p-4 border rounded-xl shadow-sm">
                     <h4 class="font-bold text-navy mb-3 border-b pb-2">5. 무너키즈폰</h4>
-                    <div class="grid grid-cols-2 gap-4 text-sm">
-                        <div><label class="text-gray-500 text-xs">출고가</label><input type="text" id="admin-kids-price" class="w-full border rounded p-2"></div>
-                        <div><label class="text-magenta text-xs font-bold">추가지원금</label><input type="text" id="admin-kids-support" class="w-full border rounded p-2"></div>
-                        <div><label class="text-gray-800 text-xs font-bold">기기값</label><input type="text" id="admin-kids-device" class="w-full border rounded p-2"></div>
-                        <div><label class="text-gray-500 text-xs">요금제</label><input type="text" id="admin-kids-plan" class="w-full border rounded p-2"></div>
+                    <div class="grid grid-cols-2 gap-3 md:gap-4 text-sm">
+                        <div><label class="text-gray-500 text-[10px] md:text-xs">출고가</label><input type="text" id="admin-kids-price" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-blue-500 text-[10px] md:text-xs font-bold">선택약정</label><input type="text" id="admin-kids-discount" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-magenta text-[10px] md:text-xs font-bold">추가지원금</label><input type="text" id="admin-kids-support" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-gray-800 text-[10px] md:text-xs font-bold">기기값</label><input type="text" id="admin-kids-device" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-gray-500 text-[10px] md:text-xs">월요금(원래)</label><input type="text" id="admin-kids-plan" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
+                        <div><label class="text-magenta text-[10px] md:text-xs font-bold">월요금(할인)</label><input type="text" id="admin-kids-plan-disc" class="w-full border rounded p-1.5 md:p-2 text-xs md:text-sm"></div>
                         <div class="col-span-2 border-t border-dashed my-1"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 1</label><input type="text" id="admin-kids-cond1" class="w-full border rounded p-2 text-xs"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 2</label><input type="text" id="admin-kids-cond2" class="w-full border rounded p-2 text-xs"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-xs font-bold">할인 조건 3</label><input type="text" id="admin-kids-cond3" class="w-full border rounded p-2 text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 1</label><input type="text" id="admin-kids-cond1" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 2</label><input type="text" id="admin-kids-cond2" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] md:text-xs font-bold">할인 조건 3</label><input type="text" id="admin-kids-cond3" class="w-full border rounded p-1.5 md:p-2 text-[10px] md:text-xs"></div>
                     </div>
                 </div>
             </div>
             <div class="bg-white p-4 border-t flex gap-3 shrink-0">
-                <button onclick="closeAdminModal()" class="flex-1 py-3 bg-gray-200 rounded-xl font-bold hover:bg-gray-300">취소 닫기</button>
-                <button onclick="saveAdminData()" class="flex-1 py-3 bg-magenta text-white rounded-xl font-bold hover:bg-magenta-hover shadow-lg">Firebase에 영구 저장하기</button>
+                <button onclick="closeAdminModal()" class="flex-1 py-3 bg-gray-200 rounded-xl font-bold hover:bg-gray-300 text-sm md:text-base">취소 닫기</button>
+                <button onclick="saveAdminData()" class="flex-1 py-3 bg-magenta text-white rounded-xl font-bold hover:bg-magenta-hover shadow-lg text-sm md:text-base">Firebase 저장</button>
             </div>
         </div>
     </div>
@@ -438,7 +520,6 @@
         
         let app, auth, db;
         
-        // 공통 할인 조건 기본값 세팅
         const defaultConds = {
             cond1: "요금제 6개월 유지",
             cond2: "부가 서비스 3개월 유지_부가 서비스명, 월 1,234원",
@@ -446,11 +527,11 @@
         };
 
         window.deviceData = {
-            s26u: { price: "1,698,400원", support: "500,000원", device: "1,198,400원", plan: "85,000원", ...defaultConds },
-            s26p: { price: "1,353,000원", support: "353,000원", device: "1,000,000원", plan: "85,000원", ...defaultConds },
-            s26: { price: "1,155,000원", support: "155,000원", device: "1,000,000원", plan: "61,000원", ...defaultConds },
-            ip17: { price: "1,550,000원", support: "250,000원", device: "1,300,000원", plan: "85,000원", ...defaultConds },
-            kids: { price: "319,000원", support: "319,000원", device: "0원", plan: "29,000원", ...defaultConds }
+            s26u: { price: "1,698,400원", discount: "선택약정 25% 할인", support: "500,000원", device: "1,198,400원", plan: "85,000원", plan_disc: "63,750원", ...defaultConds },
+            s26p: { price: "1,353,000원", discount: "선택약정 25% 할인", support: "353,000원", device: "1,000,000원", plan: "85,000원", plan_disc: "63,750원", ...defaultConds },
+            s26: { price: "1,155,000원", discount: "선택약정 25% 할인", support: "155,000원", device: "1,000,000원", plan: "61,000원", plan_disc: "45,750원", ...defaultConds },
+            ip17: { price: "1,550,000원", discount: "선택약정 25% 할인", support: "250,000원", device: "1,300,000원", plan: "85,000원", plan_disc: "63,750원", ...defaultConds },
+            kids: { price: "319,000원", discount: "선택약정 25% 할인", support: "319,000원", device: "0원", plan: "29,000원", plan_disc: "21,750원", ...defaultConds }
         };
 
         try {
@@ -473,50 +554,17 @@
 
         window.renderDevices = function() {
             try {
-                // S26 Ultra
-                document.getElementById('val-s26u-price').innerText = window.deviceData.s26u.price;
-                document.getElementById('val-s26u-support').innerText = window.deviceData.s26u.support;
-                document.getElementById('val-s26u-device').innerText = window.deviceData.s26u.device;
-                document.getElementById('val-s26u-plan').innerText = window.deviceData.s26u.plan;
-                document.getElementById('val-s26u-cond1').innerText = window.deviceData.s26u.cond1;
-                document.getElementById('val-s26u-cond2').innerText = window.deviceData.s26u.cond2;
-                document.getElementById('val-s26u-cond3').innerText = window.deviceData.s26u.cond3;
-
-                // S26+
-                document.getElementById('val-s26p-price').innerText = window.deviceData.s26p.price;
-                document.getElementById('val-s26p-support').innerText = window.deviceData.s26p.support;
-                document.getElementById('val-s26p-device').innerText = window.deviceData.s26p.device;
-                document.getElementById('val-s26p-plan').innerText = window.deviceData.s26p.plan;
-                document.getElementById('val-s26p-cond1').innerText = window.deviceData.s26p.cond1;
-                document.getElementById('val-s26p-cond2').innerText = window.deviceData.s26p.cond2;
-                document.getElementById('val-s26p-cond3').innerText = window.deviceData.s26p.cond3;
-
-                // S26
-                document.getElementById('val-s26-price').innerText = window.deviceData.s26.price;
-                document.getElementById('val-s26-support').innerText = window.deviceData.s26.support;
-                document.getElementById('val-s26-device').innerText = window.deviceData.s26.device;
-                document.getElementById('val-s26-plan').innerText = window.deviceData.s26.plan;
-                document.getElementById('val-s26-cond1').innerText = window.deviceData.s26.cond1;
-                document.getElementById('val-s26-cond2').innerText = window.deviceData.s26.cond2;
-                document.getElementById('val-s26-cond3').innerText = window.deviceData.s26.cond3;
-
-                // IP17
-                document.getElementById('val-ip17-price').innerText = window.deviceData.ip17.price;
-                document.getElementById('val-ip17-support').innerText = window.deviceData.ip17.support;
-                document.getElementById('val-ip17-device').innerText = window.deviceData.ip17.device;
-                document.getElementById('val-ip17-plan').innerText = window.deviceData.ip17.plan;
-                document.getElementById('val-ip17-cond1').innerText = window.deviceData.ip17.cond1;
-                document.getElementById('val-ip17-cond2').innerText = window.deviceData.ip17.cond2;
-                document.getElementById('val-ip17-cond3').innerText = window.deviceData.ip17.cond3;
-
-                // Kids
-                document.getElementById('val-kids-price').innerText = window.deviceData.kids.price;
-                document.getElementById('val-kids-support').innerText = window.deviceData.kids.support;
-                document.getElementById('val-kids-device').innerText = window.deviceData.kids.device;
-                document.getElementById('val-kids-plan').innerText = window.deviceData.kids.plan;
-                document.getElementById('val-kids-cond1').innerText = window.deviceData.kids.cond1;
-                document.getElementById('val-kids-cond2').innerText = window.deviceData.kids.cond2;
-                document.getElementById('val-kids-cond3').innerText = window.deviceData.kids.cond3;
+                const mapData = (prefix, data) => {
+                    ['price', 'discount', 'support', 'device', 'plan', 'plan_disc', 'cond1', 'cond2', 'cond3'].forEach(key => {
+                        const el = document.getElementById(`val-${prefix}-${key.replace('_', '-')}`);
+                        if (el) el.innerText = data[key] || window.deviceData[prefix][key];
+                    });
+                };
+                mapData('s26u', window.deviceData.s26u);
+                mapData('s26p', window.deviceData.s26p);
+                mapData('s26', window.deviceData.s26);
+                mapData('ip17', window.deviceData.ip17);
+                mapData('kids', window.deviceData.kids);
             } catch(e){}
         };
         
@@ -552,51 +600,17 @@
                 alert("✅ 관리자 로그인 성공!\n이제 데이터 정정 및 저장이 가능합니다.");
                 window.closePasswordModal();
                 
-                // 관리자 모달에 현재 데이터 채워넣기
-                // S26U
-                document.getElementById('admin-s26u-price').value = window.deviceData.s26u.price;
-                document.getElementById('admin-s26u-support').value = window.deviceData.s26u.support;
-                document.getElementById('admin-s26u-device').value = window.deviceData.s26u.device;
-                document.getElementById('admin-s26u-plan').value = window.deviceData.s26u.plan;
-                document.getElementById('admin-s26u-cond1').value = window.deviceData.s26u.cond1;
-                document.getElementById('admin-s26u-cond2').value = window.deviceData.s26u.cond2;
-                document.getElementById('admin-s26u-cond3').value = window.deviceData.s26u.cond3;
-
-                // S26P
-                document.getElementById('admin-s26p-price').value = window.deviceData.s26p.price;
-                document.getElementById('admin-s26p-support').value = window.deviceData.s26p.support;
-                document.getElementById('admin-s26p-device').value = window.deviceData.s26p.device;
-                document.getElementById('admin-s26p-plan').value = window.deviceData.s26p.plan;
-                document.getElementById('admin-s26p-cond1').value = window.deviceData.s26p.cond1;
-                document.getElementById('admin-s26p-cond2').value = window.deviceData.s26p.cond2;
-                document.getElementById('admin-s26p-cond3').value = window.deviceData.s26p.cond3;
-
-                // S26
-                document.getElementById('admin-s26-price').value = window.deviceData.s26.price;
-                document.getElementById('admin-s26-support').value = window.deviceData.s26.support;
-                document.getElementById('admin-s26-device').value = window.deviceData.s26.device;
-                document.getElementById('admin-s26-plan').value = window.deviceData.s26.plan;
-                document.getElementById('admin-s26-cond1').value = window.deviceData.s26.cond1;
-                document.getElementById('admin-s26-cond2').value = window.deviceData.s26.cond2;
-                document.getElementById('admin-s26-cond3').value = window.deviceData.s26.cond3;
-
-                // IP17
-                document.getElementById('admin-ip17-price').value = window.deviceData.ip17.price;
-                document.getElementById('admin-ip17-support').value = window.deviceData.ip17.support;
-                document.getElementById('admin-ip17-device').value = window.deviceData.ip17.device;
-                document.getElementById('admin-ip17-plan').value = window.deviceData.ip17.plan;
-                document.getElementById('admin-ip17-cond1').value = window.deviceData.ip17.cond1;
-                document.getElementById('admin-ip17-cond2').value = window.deviceData.ip17.cond2;
-                document.getElementById('admin-ip17-cond3').value = window.deviceData.ip17.cond3;
-
-                // Kids
-                document.getElementById('admin-kids-price').value = window.deviceData.kids.price;
-                document.getElementById('admin-kids-support').value = window.deviceData.kids.support;
-                document.getElementById('admin-kids-device').value = window.deviceData.kids.device;
-                document.getElementById('admin-kids-plan').value = window.deviceData.kids.plan;
-                document.getElementById('admin-kids-cond1').value = window.deviceData.kids.cond1;
-                document.getElementById('admin-kids-cond2').value = window.deviceData.kids.cond2;
-                document.getElementById('admin-kids-cond3').value = window.deviceData.kids.cond3;
+                const setAdminVal = (prefix, data) => {
+                    ['price', 'discount', 'support', 'device', 'plan', 'plan_disc', 'cond1', 'cond2', 'cond3'].forEach(key => {
+                        const el = document.getElementById(`admin-${prefix}-${key.replace('_', '-')}`);
+                        if (el) el.value = data[key] || window.deviceData[prefix][key];
+                    });
+                };
+                setAdminVal('s26u', window.deviceData.s26u);
+                setAdminVal('s26p', window.deviceData.s26p);
+                setAdminVal('s26', window.deviceData.s26);
+                setAdminVal('ip17', window.deviceData.ip17);
+                setAdminVal('kids', window.deviceData.kids);
                 
                 document.getElementById('adminModal').classList.remove('hidden'); 
             } catch (error) {
@@ -609,52 +623,21 @@
 
         window.closeAdminModal = function() { document.getElementById('adminModal').classList.add('hidden'); };
         
-        // 데이터 영구 저장 로직
         window.saveAdminData = async function() {
-            // S26U
-            window.deviceData.s26u.price = document.getElementById('admin-s26u-price').value;
-            window.deviceData.s26u.support = document.getElementById('admin-s26u-support').value;
-            window.deviceData.s26u.device = document.getElementById('admin-s26u-device').value;
-            window.deviceData.s26u.plan = document.getElementById('admin-s26u-plan').value;
-            window.deviceData.s26u.cond1 = document.getElementById('admin-s26u-cond1').value;
-            window.deviceData.s26u.cond2 = document.getElementById('admin-s26u-cond2').value;
-            window.deviceData.s26u.cond3 = document.getElementById('admin-s26u-cond3').value;
+            const getAdminVal = (prefix) => {
+                const obj = {};
+                ['price', 'discount', 'support', 'device', 'plan', 'plan_disc', 'cond1', 'cond2', 'cond3'].forEach(key => {
+                    const el = document.getElementById(`admin-${prefix}-${key.replace('_', '-')}`);
+                    if (el) obj[key] = el.value;
+                });
+                return obj;
+            };
 
-            // S26P
-            window.deviceData.s26p.price = document.getElementById('admin-s26p-price').value;
-            window.deviceData.s26p.support = document.getElementById('admin-s26p-support').value;
-            window.deviceData.s26p.device = document.getElementById('admin-s26p-device').value;
-            window.deviceData.s26p.plan = document.getElementById('admin-s26p-plan').value;
-            window.deviceData.s26p.cond1 = document.getElementById('admin-s26p-cond1').value;
-            window.deviceData.s26p.cond2 = document.getElementById('admin-s26p-cond2').value;
-            window.deviceData.s26p.cond3 = document.getElementById('admin-s26p-cond3').value;
-
-            // S26
-            window.deviceData.s26.price = document.getElementById('admin-s26-price').value;
-            window.deviceData.s26.support = document.getElementById('admin-s26-support').value;
-            window.deviceData.s26.device = document.getElementById('admin-s26-device').value;
-            window.deviceData.s26.plan = document.getElementById('admin-s26-plan').value;
-            window.deviceData.s26.cond1 = document.getElementById('admin-s26-cond1').value;
-            window.deviceData.s26.cond2 = document.getElementById('admin-s26-cond2').value;
-            window.deviceData.s26.cond3 = document.getElementById('admin-s26-cond3').value;
-
-            // IP17
-            window.deviceData.ip17.price = document.getElementById('admin-ip17-price').value;
-            window.deviceData.ip17.support = document.getElementById('admin-ip17-support').value;
-            window.deviceData.ip17.device = document.getElementById('admin-ip17-device').value;
-            window.deviceData.ip17.plan = document.getElementById('admin-ip17-plan').value;
-            window.deviceData.ip17.cond1 = document.getElementById('admin-ip17-cond1').value;
-            window.deviceData.ip17.cond2 = document.getElementById('admin-ip17-cond2').value;
-            window.deviceData.ip17.cond3 = document.getElementById('admin-ip17-cond3').value;
-
-            // Kids
-            window.deviceData.kids.price = document.getElementById('admin-kids-price').value;
-            window.deviceData.kids.support = document.getElementById('admin-kids-support').value;
-            window.deviceData.kids.device = document.getElementById('admin-kids-device').value;
-            window.deviceData.kids.plan = document.getElementById('admin-kids-plan').value;
-            window.deviceData.kids.cond1 = document.getElementById('admin-kids-cond1').value;
-            window.deviceData.kids.cond2 = document.getElementById('admin-kids-cond2').value;
-            window.deviceData.kids.cond3 = document.getElementById('admin-kids-cond3').value;
+            window.deviceData.s26u = getAdminVal('s26u');
+            window.deviceData.s26p = getAdminVal('s26p');
+            window.deviceData.s26 = getAdminVal('s26');
+            window.deviceData.ip17 = getAdminVal('ip17');
+            window.deviceData.kids = getAdminVal('kids');
             
             window.renderDevices();
 
