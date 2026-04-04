@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>AGC화인테크노 임직원 전용 유플러스 특판</title>
     <!-- Google Fonts: Noto Sans KR -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet"/>
     <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
     <!-- Tailwind CSS v3 -->
@@ -30,7 +30,6 @@
     </script>
     <style data-purpose="custom-layout-styles">
         body { font-family: 'Noto Sans KR', sans-serif; word-break: keep-all; }
-        /* Receipt UI edge effects */
         .receipt-edge-top {
             background-image: radial-gradient(circle at 10px 0, transparent 10px, white 11px);
             background-size: 20px 20px;
@@ -45,7 +44,6 @@
             height: 10px;
             margin-bottom: -10px;
         }
-        /* Hide scrollbar for carousel */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
@@ -109,16 +107,13 @@
     <!-- BEGIN: MainDeviceSection -->
     <section class="py-10 px-4 max-w-2xl mx-auto" data-purpose="premium-device">
         <div class="text-center mb-6">
-            <h2 class="text-sm font-bold text-gray-500 mb-1">가장 많이 선택하는 프리미엄</h2>
+            <h2 class="text-sm font-bold text-gray-500 mb-1">AGC화인테크노 임직원이 가장 많이 선택하는 프리미엄</h2>
             <p class="text-2xl font-black text-navy tracking-tight">갤럭시 S26 울트라</p>
         </div>
-        <!-- Mobile-Optimized Layout: 3:7 Ratio -->
         <div class="bg-white rounded-3xl shadow-xl overflow-hidden flex border border-gray-100">
-            <!-- Image Side (30%) -->
             <div class="w-[35%] bg-gray-50 flex items-center justify-center p-4 border-r border-gray-100">
-                <img alt="S26 Ultra" class="w-full h-auto drop-shadow-xl" src="s26ultra.jpg"/>
+                <img alt="S26 Ultra" class="w-full h-auto drop-shadow-xl" src="s26ultra.jpg" onerror="this.src='https://placehold.co/400x500/f3f4f6/a1a1aa?text=S26+Ultra'"/>
             </div>
-            <!-- Info Side (70%) -->
             <div class="w-[65%] p-5 flex flex-col justify-center">
                 <div class="space-y-2 border-b border-dashed border-gray-200 pb-3 mb-3">
                     <div class="flex justify-between text-xs"><span class="text-gray-400">출고가</span><span class="line-through text-gray-400" id="val-s26u-price">1,698,400원</span></div>
@@ -152,7 +147,7 @@
             <!-- S26+ Item -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden flex border border-gray-100">
                 <div class="w-[30%] bg-gray-50 flex items-center justify-center p-3">
-                    <img alt="S26 Plus" class="max-h-24" src="s26plus.jpg"/>
+                    <img alt="S26 Plus" class="max-h-24" src="s26plus.jpg" onerror="this.src='https://placehold.co/300x400/f3f4f6/a1a1aa?text=S26%2B'"/>
                 </div>
                 <div class="w-[70%] p-4 flex flex-col justify-between">
                     <div>
@@ -184,7 +179,7 @@
             <!-- S26 Item -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden flex border border-gray-100">
                 <div class="w-[30%] bg-gray-50 flex items-center justify-center p-3">
-                    <img alt="S26" class="max-h-24" src="s26.jpg"/>
+                    <img alt="S26" class="max-h-24" src="s26.jpg" onerror="this.src='https://placehold.co/300x400/f3f4f6/a1a1aa?text=S26'"/>
                 </div>
                 <div class="w-[70%] p-4 flex flex-col justify-between">
                     <div>
@@ -216,7 +211,7 @@
             <!-- iPhone 17 Pro Item -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden flex border border-gray-100">
                 <div class="w-[30%] bg-gray-50 flex items-center justify-center p-3">
-                    <img alt="iPhone 17 Pro" class="max-h-24" src="iphone17pro.jpg"/>
+                    <img alt="iPhone 17 Pro" class="max-h-24" src="iphone17pro.jpg" onerror="this.src='https://placehold.co/300x400/f3f4f6/a1a1aa?text=iPhone+17+Pro'"/>
                 </div>
                 <div class="w-[70%] p-4 flex flex-col justify-between">
                     <div>
@@ -245,38 +240,103 @@
                 </div>
             </div>
 
-            <!-- Kids Phone Item -->
+            <!-- Galaxy Z Flip 7 Item -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden flex border border-gray-100">
-                <div class="w-[30%] bg-gray-50 flex items-center justify-center p-3 relative">
-                    <span class="absolute top-1 left-1 bg-magenta text-white text-[8px] px-1.5 rounded font-bold">공짜</span>
-                    <img alt="Kids Phone" class="max-h-24" src="kidsphone2.jpg"/>
+                <div class="w-[30%] bg-gray-50 flex items-center justify-center p-3">
+                    <img alt="Galaxy Z Flip 7" class="max-h-24" src="zflip7.jpg" onerror="this.src='https://placehold.co/300x400/f3f4f6/a1a1aa?text=Z+Flip+7'"/>
                 </div>
                 <div class="w-[70%] p-4 flex flex-col justify-between">
                     <div>
-                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-sm">무너에디션2 키즈폰</h3></div>
+                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-sm">갤럭시 Z플립7</h3></div>
                         <div class="space-y-1.5 border-b border-dashed border-gray-200 pb-2 mb-2">
-                            <div class="flex justify-between text-[10px]"><span class="text-gray-400">출고가</span><span class="line-through text-gray-400" id="val-kids-price">319,000원</span></div>
-                            <div class="flex justify-between text-[10px]"><span class="text-magenta font-bold">추가지원금</span><span class="text-magenta font-bold" id="val-kids-support">- 319,000원</span></div>
-                            <div class="flex justify-between text-[11px]"><span class="font-bold text-gray-700">최종 기기값</span><span class="font-black text-navy" id="val-kids-device">0원</span></div>
+                            <div class="flex justify-between text-[10px]"><span class="text-gray-400">출고가</span><span class="line-through text-gray-400" id="val-zflip7-price">1,399,200원</span></div>
+                            <div class="flex justify-between text-[10px]"><span class="text-magenta font-bold">추가지원금</span><span class="text-magenta font-bold" id="val-zflip7-support">- 399,200원</span></div>
+                            <div class="flex justify-between text-[11px]"><span class="font-bold text-gray-700">최종 기기값</span><span class="font-black text-navy" id="val-zflip7-device">1,000,000원</span></div>
                         </div>
                         <div class="text-right mb-3">
-                            <p class="text-[9px] text-blue-500 font-bold" id="val-kids-discount">선택약정 25%할인</p>
-                            <p class="text-base font-black text-magenta" id="val-kids-plan-disc">월 21,750원</p>
-                            <p class="text-[8px] text-gray-400" id="val-kids-plan">(29요금제 기준)</p>
+                            <p class="text-[9px] text-blue-500 font-bold" id="val-zflip7-discount">선택약정 25%할인</p>
+                            <p class="text-base font-black text-magenta" id="val-zflip7-plan-disc">월 63,750원</p>
+                            <p class="text-[8px] text-gray-400" id="val-zflip7-plan">(85요금제 기준)</p>
                         </div>
                         <!-- 할인 조건 추가 -->
                         <div class="bg-blue-50 p-2 rounded-lg border border-blue-100 mb-2 text-[10px] text-gray-700">
                             <p class="font-bold text-navy mb-1"><i class="fas fa-check text-blue-500"></i> 할인 조건</p>
                             <ul class="list-decimal pl-3.5 space-y-0.5">
-                                <li id="val-kids-cond1" class="truncate">요금제 6개월 유지</li>
-                                <li id="val-kids-cond2" class="truncate">부가 서비스 3개월 유지</li>
-                                <li id="val-kids-cond3" class="truncate">보험 서비스 3개월 유지</li>
+                                <li id="val-zflip7-cond1" class="truncate">요금제 6개월 유지</li>
+                                <li id="val-zflip7-cond2" class="truncate">부가 서비스 3개월 유지</li>
+                                <li id="val-zflip7-cond3" class="truncate">보험 서비스 3개월 유지</li>
                             </ul>
                         </div>
                     </div>
-                    <button class="w-full py-1.5 border border-navy text-navy text-[11px] font-bold rounded-md hover:bg-navy hover:text-white transition-colors" onclick="openModal('키즈폰')">상세 상담받기</button>
+                    <button class="w-full py-1.5 border border-navy text-navy text-[11px] font-bold rounded-md hover:bg-navy hover:text-white transition-colors" onclick="openModal('갤럭시 Z플립7')">상세 상담받기</button>
                 </div>
             </div>
+
+            <!-- Galaxy Z Fold 7 Item -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden flex border border-gray-100">
+                <div class="w-[30%] bg-gray-50 flex items-center justify-center p-3">
+                    <img alt="Galaxy Z Fold 7" class="max-h-24" src="zfold7.jpg" onerror="this.src='https://placehold.co/300x400/f3f4f6/a1a1aa?text=Z+Fold+7'"/>
+                </div>
+                <div class="w-[70%] p-4 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-sm">갤럭시 Z폴드7</h3></div>
+                        <div class="space-y-1.5 border-b border-dashed border-gray-200 pb-2 mb-2">
+                            <div class="flex justify-between text-[10px]"><span class="text-gray-400">출고가</span><span class="line-through text-gray-400" id="val-zfold7-price">2,097,700원</span></div>
+                            <div class="flex justify-between text-[10px]"><span class="text-magenta font-bold">추가지원금</span><span class="text-magenta font-bold" id="val-zfold7-support">- 500,000원</span></div>
+                            <div class="flex justify-between text-[11px]"><span class="font-bold text-gray-700">최종 기기값</span><span class="font-black text-navy" id="val-zfold7-device">1,597,700원</span></div>
+                        </div>
+                        <div class="text-right mb-3">
+                            <p class="text-[9px] text-blue-500 font-bold" id="val-zfold7-discount">선택약정 25%할인</p>
+                            <p class="text-base font-black text-magenta" id="val-zfold7-plan-disc">월 63,750원</p>
+                            <p class="text-[8px] text-gray-400" id="val-zfold7-plan">(85요금제 기준)</p>
+                        </div>
+                        <!-- 할인 조건 추가 -->
+                        <div class="bg-blue-50 p-2 rounded-lg border border-blue-100 mb-2 text-[10px] text-gray-700">
+                            <p class="font-bold text-navy mb-1"><i class="fas fa-check text-blue-500"></i> 할인 조건</p>
+                            <ul class="list-decimal pl-3.5 space-y-0.5">
+                                <li id="val-zfold7-cond1" class="truncate">요금제 6개월 유지</li>
+                                <li id="val-zfold7-cond2" class="truncate">부가 서비스 3개월 유지</li>
+                                <li id="val-zfold7-cond3" class="truncate">보험 서비스 3개월 유지</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="w-full py-1.5 border border-navy text-navy text-[11px] font-bold rounded-md hover:bg-navy hover:text-white transition-colors" onclick="openModal('갤럭시 Z폴드7')">상세 상담받기</button>
+                </div>
+            </div>
+
+            <!-- Galaxy Z Fold 5 Item -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden flex border border-gray-100">
+                <div class="w-[30%] bg-gray-50 flex items-center justify-center p-3 relative">
+                    <span class="absolute top-1 left-1 bg-red-500 text-white text-[8px] px-1.5 rounded font-bold">특가</span>
+                    <img alt="Galaxy Z Fold 5" class="max-h-24" src="zfold5.jpg" onerror="this.src='https://placehold.co/300x400/f3f4f6/a1a1aa?text=Z+Fold+5'"/>
+                </div>
+                <div class="w-[70%] p-4 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2"><h3 class="font-bold text-sm">갤럭시 Z폴드5</h3></div>
+                        <div class="space-y-1.5 border-b border-dashed border-gray-200 pb-2 mb-2">
+                            <div class="flex justify-between text-[10px]"><span class="text-gray-400">출고가</span><span class="line-through text-gray-400" id="val-zfold5-price">1,989,800원</span></div>
+                            <div class="flex justify-between text-[10px]"><span class="text-magenta font-bold">추가지원금</span><span class="text-magenta font-bold" id="val-zfold5-support">- 1,000,000원</span></div>
+                            <div class="flex justify-between text-[11px]"><span class="font-bold text-gray-700">최종 기기값</span><span class="font-black text-navy" id="val-zfold5-device">989,800원</span></div>
+                        </div>
+                        <div class="text-right mb-3">
+                            <p class="text-[9px] text-blue-500 font-bold" id="val-zfold5-discount">선택약정 25%할인</p>
+                            <p class="text-base font-black text-magenta" id="val-zfold5-plan-disc">월 63,750원</p>
+                            <p class="text-[8px] text-gray-400" id="val-zfold5-plan">(85요금제 기준)</p>
+                        </div>
+                        <!-- 할인 조건 추가 -->
+                        <div class="bg-blue-50 p-2 rounded-lg border border-blue-100 mb-2 text-[10px] text-gray-700">
+                            <p class="font-bold text-navy mb-1"><i class="fas fa-check text-blue-500"></i> 할인 조건</p>
+                            <ul class="list-decimal pl-3.5 space-y-0.5">
+                                <li id="val-zfold5-cond1" class="truncate">요금제 6개월 유지</li>
+                                <li id="val-zfold5-cond2" class="truncate">부가 서비스 3개월 유지</li>
+                                <li id="val-zfold5-cond3" class="truncate">보험 서비스 3개월 유지</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="w-full py-1.5 border border-navy text-navy text-[11px] font-bold rounded-md hover:bg-navy hover:text-white transition-colors" onclick="openModal('갤럭시 Z폴드5')">상세 상담받기</button>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- END: RecommendationGrid -->
@@ -345,9 +405,13 @@
                 <div>
                     <label class="block text-xs font-bold text-gray-500 mb-1">관심 모델</label>
                     <select class="w-full border-gray-200 rounded-xl focus:ring-magenta focus:border-magenta" id="formModel">
-                        <option value="갤럭시 S26 울트라">갤럭시 S26 울트라</option><option value="갤럭시 S26+">갤럭시 S26+</option>
-                        <option value="갤럭시 S26">갤럭시 S26</option><option value="아이폰17 프로">아이폰17 프로</option>
-                        <option value="키즈폰">무너 키즈폰</option>
+                        <option value="갤럭시 S26 울트라">갤럭시 S26 울트라</option>
+                        <option value="갤럭시 S26+">갤럭시 S26+</option>
+                        <option value="갤럭시 S26">갤럭시 S26</option>
+                        <option value="아이폰17 프로">아이폰17 프로</option>
+                        <option value="갤럭시 Z플립7">갤럭시 Z플립7</option>
+                        <option value="갤럭시 Z폴드7">갤럭시 Z폴드7</option>
+                        <option value="갤럭시 Z폴드5">갤럭시 초특가 (갤럭시 Z폴드5)</option>
                         <option value="단말기 없이 요금할인/결합">결합형 (110만원 혜택)</option>
                     </select>
                 </div>
@@ -444,20 +508,52 @@
                         <div class="col-span-2"><label class="text-blue-600 text-[10px] font-bold">할인 조건 3</label><input type="text" id="admin-ip17-cond3" class="w-full border-gray-200 rounded-lg p-1.5 text-xs"></div>
                     </div>
                 </div>
-                <!-- Kids Phone -->
+                <!-- Galaxy Z Flip 7 -->
                 <div class="bg-white p-4 border border-gray-100 rounded-2xl shadow-sm">
-                    <h4 class="font-bold text-navy mb-3 border-b pb-2 text-sm">5. 무너에디션2 키즈폰 (그리드)</h4>
+                    <h4 class="font-bold text-navy mb-3 border-b pb-2 text-sm">5. 갤럭시 Z플립7 (그리드)</h4>
                     <div class="grid grid-cols-2 gap-3 text-sm">
-                        <div><label class="text-gray-500 text-xs">출고가</label><input type="text" id="admin-kids-price" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
-                        <div><label class="text-magenta text-xs font-bold">추가지원금</label><input type="text" id="admin-kids-support" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
-                        <div><label class="text-gray-800 text-xs font-bold">기기값</label><input type="text" id="admin-kids-device" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
-                        <div><label class="text-blue-500 text-xs font-bold">할인 종류 문구</label><input type="text" id="admin-kids-discount" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
-                        <div><label class="text-magenta text-xs font-bold">월요금 (할인적용)</label><input type="text" id="admin-kids-plan-disc" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
-                        <div><label class="text-gray-500 text-xs">기준 요금제 문구</label><input type="text" id="admin-kids-plan" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-gray-500 text-xs">출고가</label><input type="text" id="admin-zflip7-price" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-magenta text-xs font-bold">추가지원금</label><input type="text" id="admin-zflip7-support" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-gray-800 text-xs font-bold">기기값</label><input type="text" id="admin-zflip7-device" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-blue-500 text-xs font-bold">할인 종류 문구</label><input type="text" id="admin-zflip7-discount" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-magenta text-xs font-bold">월요금 (할인적용)</label><input type="text" id="admin-zflip7-plan-disc" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-gray-500 text-xs">기준 요금제 문구</label><input type="text" id="admin-zflip7-plan" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
                         <div class="col-span-2 border-t border-dashed border-gray-200 my-1"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-[10px] font-bold">할인 조건 1</label><input type="text" id="admin-kids-cond1" class="w-full border-gray-200 rounded-lg p-1.5 text-xs"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-[10px] font-bold">할인 조건 2</label><input type="text" id="admin-kids-cond2" class="w-full border-gray-200 rounded-lg p-1.5 text-xs"></div>
-                        <div class="col-span-2"><label class="text-blue-600 text-[10px] font-bold">할인 조건 3</label><input type="text" id="admin-kids-cond3" class="w-full border-gray-200 rounded-lg p-1.5 text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] font-bold">할인 조건 1</label><input type="text" id="admin-zflip7-cond1" class="w-full border-gray-200 rounded-lg p-1.5 text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] font-bold">할인 조건 2</label><input type="text" id="admin-zflip7-cond2" class="w-full border-gray-200 rounded-lg p-1.5 text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] font-bold">할인 조건 3</label><input type="text" id="admin-zflip7-cond3" class="w-full border-gray-200 rounded-lg p-1.5 text-xs"></div>
+                    </div>
+                </div>
+                <!-- Galaxy Z Fold 7 -->
+                <div class="bg-white p-4 border border-gray-100 rounded-2xl shadow-sm">
+                    <h4 class="font-bold text-navy mb-3 border-b pb-2 text-sm">6. 갤럭시 Z폴드7 (그리드)</h4>
+                    <div class="grid grid-cols-2 gap-3 text-sm">
+                        <div><label class="text-gray-500 text-xs">출고가</label><input type="text" id="admin-zfold7-price" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-magenta text-xs font-bold">추가지원금</label><input type="text" id="admin-zfold7-support" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-gray-800 text-xs font-bold">기기값</label><input type="text" id="admin-zfold7-device" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-blue-500 text-xs font-bold">할인 종류 문구</label><input type="text" id="admin-zfold7-discount" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-magenta text-xs font-bold">월요금 (할인적용)</label><input type="text" id="admin-zfold7-plan-disc" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-gray-500 text-xs">기준 요금제 문구</label><input type="text" id="admin-zfold7-plan" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div class="col-span-2 border-t border-dashed border-gray-200 my-1"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] font-bold">할인 조건 1</label><input type="text" id="admin-zfold7-cond1" class="w-full border-gray-200 rounded-lg p-1.5 text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] font-bold">할인 조건 2</label><input type="text" id="admin-zfold7-cond2" class="w-full border-gray-200 rounded-lg p-1.5 text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] font-bold">할인 조건 3</label><input type="text" id="admin-zfold7-cond3" class="w-full border-gray-200 rounded-lg p-1.5 text-xs"></div>
+                    </div>
+                </div>
+                <!-- Galaxy Z Fold 5 -->
+                <div class="bg-white p-4 border border-gray-100 rounded-2xl shadow-sm">
+                    <h4 class="font-bold text-navy mb-3 border-b pb-2 text-sm">7. 갤럭시 Z폴드5 (그리드)</h4>
+                    <div class="grid grid-cols-2 gap-3 text-sm">
+                        <div><label class="text-gray-500 text-xs">출고가</label><input type="text" id="admin-zfold5-price" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-magenta text-xs font-bold">추가지원금</label><input type="text" id="admin-zfold5-support" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-gray-800 text-xs font-bold">기기값</label><input type="text" id="admin-zfold5-device" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-blue-500 text-xs font-bold">할인 종류 문구</label><input type="text" id="admin-zfold5-discount" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-magenta text-xs font-bold">월요금 (할인적용)</label><input type="text" id="admin-zfold5-plan-disc" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div><label class="text-gray-500 text-xs">기준 요금제 문구</label><input type="text" id="admin-zfold5-plan" class="w-full border-gray-200 rounded-lg p-2 text-xs"></div>
+                        <div class="col-span-2 border-t border-dashed border-gray-200 my-1"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] font-bold">할인 조건 1</label><input type="text" id="admin-zfold5-cond1" class="w-full border-gray-200 rounded-lg p-1.5 text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] font-bold">할인 조건 2</label><input type="text" id="admin-zfold5-cond2" class="w-full border-gray-200 rounded-lg p-1.5 text-xs"></div>
+                        <div class="col-span-2"><label class="text-blue-600 text-[10px] font-bold">할인 조건 3</label><input type="text" id="admin-zfold5-cond3" class="w-full border-gray-200 rounded-lg p-1.5 text-xs"></div>
                     </div>
                 </div>
             </div>
@@ -467,6 +563,16 @@
             </div>
         </div>
     </div>
+
+    <!-- BEGIN: Custom Alert Modal -->
+    <div id="customAlert" class="fixed inset-0 bg-black/60 z-[100] hidden flex items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl p-6 max-w-xs w-full text-center shadow-2xl transform scale-95 transition-all duration-200" id="customAlertBox">
+            <div class="text-4xl mb-4 mt-2" id="customAlertIcon"></div>
+            <p class="text-gray-800 font-bold mb-6 whitespace-pre-line leading-relaxed" id="customAlertMessage"></p>
+            <button class="w-full bg-navy text-white font-bold py-3.5 rounded-xl hover:bg-gray-800 transition-colors shadow-md" onclick="closeCustomAlert()">확인</button>
+        </div>
+    </div>
+    <!-- END: Custom Alert Modal -->
 
     <!-- BEGIN: Firebase Logic Scripts -->
     <script type="module">
@@ -483,24 +589,52 @@
             appId: "1:765948743764:web:d870382bb2142be3009dc1",
             measurementId: "G-79WSKK8KFR"
         };
-        const appId = 'hanbit-agcft-v1'; // 기존 데이터와 연결하기 위해 v1으로 다시 수정
+        // ★ AGC화인테크노 전용 DB 경로 (기존 데이터와 연결)
+        const appId = 'hanbit-agcft-v1'; 
         
         let app, auth, db;
         
-        // 공통 할인 조건 기본값 세팅 추가
         const defaultConds = {
             cond1: "요금제 6개월 유지",
-            cond2: "부가 서비스 3개월 유지_부가 서비스명, 월 1,234원",
-            cond3: "보험 서비스 3개월 유지_보험 서비스명, 월 1,234원"
+            cond2: "부가 서비스 3개월 유지",
+            cond3: "보험 서비스 3개월 유지"
         };
 
-        // 새 디자인(AGCFT_2)에 맞춘 초기 기본값 (+ 할인 조건 결합)
+        // 기본 템플릿 데이터 초기 세팅
         window.deviceData = {
             s26u: { price: "1,698,400원", support: "- 500,000원", device: "1,198,400원", discount: "선택약정 25%할인", plan_disc: "월 63,750원", plan: "(85요금제 기준)", ...defaultConds },
             s26p: { price: "1,353,000원", support: "- 353,000원", device: "1,000,000원", discount: "선택약정 25%할인", plan_disc: "월 63,750원", plan: "(85요금제 기준)", ...defaultConds },
             s26: { price: "1,155,000원", support: "- 155,000원", device: "1,000,000원", discount: "선택약정 25%할인", plan_disc: "월 45,750원", plan: "(61요금제 기준)", ...defaultConds },
             ip17: { price: "1,550,000원", support: "- 250,000원", device: "1,300,000원", discount: "선택약정 25%할인", plan_disc: "월 63,750원", plan: "(85요금제 기준)", ...defaultConds },
-            kids: { price: "319,000원", support: "- 319,000원", device: "0원", discount: "선택약정 25%할인", plan_disc: "월 21,750원", plan: "(29요금제 기준)", ...defaultConds }
+            zflip7: { price: "1,399,200원", support: "- 399,200원", device: "1,000,000원", discount: "선택약정 25%할인", plan_disc: "월 63,750원", plan: "(85요금제 기준)", ...defaultConds },
+            zfold7: { price: "2,097,700원", support: "- 500,000원", device: "1,597,700원", discount: "선택약정 25%할인", plan_disc: "월 63,750원", plan: "(85요금제 기준)", ...defaultConds },
+            zfold5: { price: "1,989,800원", support: "- 1,000,000원", device: "989,800원", discount: "선택약정 25%할인", plan_disc: "월 63,750원", plan: "(85요금제 기준)", ...defaultConds }
+        };
+
+        // --- Custom Alert Logic ---
+        window._alertCallback = null;
+        window.showAlert = function(message, isSuccess = true, callback = null) {
+            const modal = document.getElementById('customAlert');
+            const box = document.getElementById('customAlertBox');
+            document.getElementById('customAlertMessage').innerText = message;
+            document.getElementById('customAlertIcon').innerHTML = isSuccess ? '✅' : '❌';
+            window._alertCallback = callback;
+            
+            modal.classList.remove('hidden');
+            setTimeout(() => box.classList.remove('scale-95'), 10);
+        };
+        
+        window.closeCustomAlert = function() {
+            const modal = document.getElementById('customAlert');
+            const box = document.getElementById('customAlertBox');
+            box.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                if (typeof window._alertCallback === 'function') {
+                    window._alertCallback();
+                    window._alertCallback = null;
+                }
+            }, 200);
         };
 
         try {
@@ -510,7 +644,6 @@
             
             const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'prices', 'current');
             
-            // 데이터 실시간 수신
             onSnapshot(docRef, (snap) => {
                 if(snap.exists()){
                     window.deviceData = { ...window.deviceData, ...snap.data() };
@@ -522,7 +655,6 @@
 
         } catch(e) { console.error("Firebase 초기화 에러:", e); }
 
-        // 화면 텍스트 실시간 반영 함수
         window.renderDevices = function() {
             try {
                 const mapData = (prefix, data) => {
@@ -535,11 +667,12 @@
                 mapData('s26p', window.deviceData.s26p);
                 mapData('s26', window.deviceData.s26);
                 mapData('ip17', window.deviceData.ip17);
-                mapData('kids', window.deviceData.kids);
+                mapData('zflip7', window.deviceData.zflip7);
+                mapData('zfold7', window.deviceData.zfold7);
+                mapData('zfold5', window.deviceData.zfold5);
             } catch(e){}
         };
 
-        // 관리자 모달창 로그인
         window.openPasswordModal = function() { 
             document.getElementById('passwordModal').classList.remove('hidden'); 
             document.getElementById('passwordErrorMsg').classList.add('hidden');
@@ -560,23 +693,24 @@
 
             try {
                 await signInWithEmailAndPassword(auth, email, pwd);
-                alert("✅ 관리자 로그인 성공!\n이제 데이터 정정 및 저장이 가능합니다.");
                 window.closePasswordModal();
-                
-                // 관리자 입력창에 현재 데이터 채우기 (새 디자인 항목만)
-                const setAdminVal = (prefix, data) => {
-                    ['price', 'discount', 'support', 'device', 'plan', 'plan_disc', 'cond1', 'cond2', 'cond3'].forEach(key => {
-                        const el = document.getElementById(`admin-${prefix}-${key.replace('_', '-')}`);
-                        if (el) el.value = data[key] || window.deviceData[prefix][key];
-                    });
-                };
-                setAdminVal('s26u', window.deviceData.s26u);
-                setAdminVal('s26p', window.deviceData.s26p);
-                setAdminVal('s26', window.deviceData.s26);
-                setAdminVal('ip17', window.deviceData.ip17);
-                setAdminVal('kids', window.deviceData.kids);
-                
-                document.getElementById('adminModal').classList.remove('hidden'); 
+                showAlert("관리자 로그인 성공!\n이제 데이터 정정 및 저장이 가능합니다.", true, () => {
+                    const setAdminVal = (prefix, data) => {
+                        ['price', 'discount', 'support', 'device', 'plan', 'plan_disc', 'cond1', 'cond2', 'cond3'].forEach(key => {
+                            const el = document.getElementById(`admin-${prefix}-${key.replace('_', '-')}`);
+                            if (el) el.value = data[key] || window.deviceData[prefix][key];
+                        });
+                    };
+                    setAdminVal('s26u', window.deviceData.s26u);
+                    setAdminVal('s26p', window.deviceData.s26p);
+                    setAdminVal('s26', window.deviceData.s26);
+                    setAdminVal('ip17', window.deviceData.ip17);
+                    setAdminVal('zflip7', window.deviceData.zflip7);
+                    setAdminVal('zfold7', window.deviceData.zfold7);
+                    setAdminVal('zfold5', window.deviceData.zfold5);
+                    
+                    document.getElementById('adminModal').classList.remove('hidden'); 
+                });
             } catch (error) {
                 console.error("로그인 에러:", error);
                 const errMsg = document.getElementById('passwordErrorMsg');
@@ -587,7 +721,6 @@
 
         window.closeAdminModal = function() { document.getElementById('adminModal').classList.add('hidden'); };
         
-        // 관리자 모달 저장
         window.saveAdminData = async function() {
             const getAdminVal = (prefix) => {
                 const obj = {};
@@ -602,9 +735,11 @@
             window.deviceData.s26p = { ...window.deviceData.s26p, ...getAdminVal('s26p') };
             window.deviceData.s26 = { ...window.deviceData.s26, ...getAdminVal('s26') };
             window.deviceData.ip17 = { ...window.deviceData.ip17, ...getAdminVal('ip17') };
-            window.deviceData.kids = { ...window.deviceData.kids, ...getAdminVal('kids') };
+            window.deviceData.zflip7 = { ...window.deviceData.zflip7, ...getAdminVal('zflip7') };
+            window.deviceData.zfold7 = { ...window.deviceData.zfold7, ...getAdminVal('zfold7') };
+            window.deviceData.zfold5 = { ...window.deviceData.zfold5, ...getAdminVal('zfold5') };
             
-            window.renderDevices(); // 로컬 화면 갱신
+            window.renderDevices(); 
 
             if (auth && auth.currentUser) {
                 const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'prices', 'current');
@@ -612,18 +747,19 @@
                     await setDoc(docRef, window.deviceData);
                     const msg = document.getElementById('admin-save-msg');
                     msg.classList.remove('hidden');
-                    alert("✅ 요금 데이터가 성공적으로 클라우드에 영구 저장되었습니다!");
-                    setTimeout(() => { msg.classList.add('hidden'); window.closeAdminModal(); }, 1500);
+                    showAlert("요금 데이터가 성공적으로 클라우드에 영구 저장되었습니다!", true, () => {
+                        msg.classList.add('hidden'); 
+                        window.closeAdminModal();
+                    });
                 } catch(e) { 
-                    alert("❌ 데이터베이스 저장 실패!\n원인: " + e.message);
+                    showAlert("데이터베이스 저장 실패!\n원인: " + e.message, false);
                     console.error("Firebase Save Error:", e); 
                 }
             } else {
-                alert("❌ 저장 권한이 없습니다! 다시 로그인해 주세요.");
+                showAlert("저장 권한이 없습니다! 다시 로그인해 주세요.", false);
             }
         };
 
-        // 모달창 오픈 로직
         window.openModal = function(model) { 
             const modal = document.getElementById('consultModal');
             modal.classList.remove('hidden');
@@ -634,19 +770,18 @@
             document.getElementById('consultModal').classList.add('hidden'); 
         };
         
-        // 외부 클릭 시 모달 닫기
         window.onclick = function(event) {
             const modal = document.getElementById('consultModal');
             if (event.target == modal) closeModal();
         };
 
-        // 카카오톡 폼 제출 로직 (새 디자인 폼 ID 반영)
         window.handleConsultSubmit = function(e) {
             e.preventDefault();
             const name = document.getElementById('formName').value;
             const phone = document.getElementById('formPhone').value;
             const model = document.getElementById('formModel').value;
             
+            // ★ 카카오톡 메시지 분리 (AGC용)
             const message = `[AGC 특판 신청]\n성함: ${name}\n연락처: ${phone}\n관심모델: ${model}\n상담 요청합니다.`;
             
             const textarea = document.createElement("textarea");
@@ -656,13 +791,12 @@
             document.execCommand('copy');
             document.body.removeChild(textarea);
             
-            alert("신청 정보가 복사되었습니다. 카카오톡 대화창에 붙여넣어 주세요!");
-            window.location.href = "http://pf.kakao.com/_rExbYG/chat";
+            showAlert("신청 정보가 복사되었습니다.\n확인을 누르시면 카카오톡 대화창으로 이동합니다.", true, () => {
+                window.location.href = "http://pf.kakao.com/_rExbYG/chat";
+            });
         };
 
-        // 초기 화면 랜더링 실행
         document.addEventListener("DOMContentLoaded", window.renderDevices);
     </script>
-    <!-- END: Firebase Logic Scripts -->
 </body>
 </html>
